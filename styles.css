@@ -270,13 +270,12 @@ body .pools-site {
   background-image: url('images/contact.jpg');
 }
 
-
 /* detail001.html */
-.details_disp{
+.details_disp {
   line-height: 24px;
 }
 
-.details_disp_focus{
+.details_disp_focus {
   margin: 10px 0px 10px 0px;
 }
 
@@ -293,7 +292,7 @@ body .pools-site {
   margin: 10px 0px 10px 0px;
 }
 
-.img-streamer-coffee{
+.img-streamer-coffee {
   background-image: url('images/sakae-coffee.png');
   height: 100px;
   background-color: rgb(255, 171, 64);
@@ -305,7 +304,6 @@ body .pools-site {
   box-sizing: border-box;
   padding: 75% 0 0;
   margin-bottom: 10px;
-
 }
 
 .img-streamer-coffee-night {
@@ -634,4 +632,30 @@ body .pools-site {
   align-items: center;
   background-color: white;
   box-sizing: border-box;
+}
+
+.demo-layout-transparent {
+  background: url('images/bg_1024.jpg') center / cover;
+}
+
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: white;
+
+}
+
+.mdl-navigation{
+  color: white;
+}
+
+.mdl-layout__drawer-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vietnam-language{
+  color: black;
 }
