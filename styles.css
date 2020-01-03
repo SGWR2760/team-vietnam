@@ -82,10 +82,10 @@ body .pools-site {
 }
 
 .pools-site .mdl-card__title {
-  padding: 16px;
-  -webkit-flex-grow: 1;
+  padding: 16px 16px 0px 16px;
+  /* -webkit-flex-grow: 1; */
   -ms-flex-positive: 1;
-  flex-grow: 1;
+  /* flex-grow: 1; */
 }
 
 .pools-site .mdl-card__media {
@@ -154,7 +154,7 @@ body .pools-site {
 
 .pools-site .meta {
   box-sizing: border-box;
-  padding: 16px;
+  padding: 0px 16px 16px 16px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -658,4 +658,14 @@ body .pools-site {
 
 .vietnam-language{
   color: black;
+}
+
+.mdl-card__actions {
+    display: flex;
+    box-sizing:border-box;
+    align-items: center;
+}
+.mdl-card__actions > .mdl-button--icon {
+    margin-right: 3px;
+    margin-left: 3px;
 }
