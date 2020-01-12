@@ -50,7 +50,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77378955-3"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-77378955-3');
@@ -59,105 +62,76 @@
 </head>
 
 <body>
+
+
   <div class="pools-site mdl-layout mdl-js-layout has-drawer is-upgraded">
+    <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+      <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+      </div>
+      <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+        <h3>Name &amp; Title</h3>
+      </div>
+      <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+      </div>
+      <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+        <a href="#overview" class="mdl-layout__tab is-active">Overview</a>
+        <a href="#features" class="mdl-layout__tab">Features</a>
+        <a href="#features" class="mdl-layout__tab">Details</a>
+        <a href="#features" class="mdl-layout__tab">Technology</a>
+        <a href="#features" class="mdl-layout__tab">FAQ</a>
+        <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add">
+          <i class="material-icons" role="presentation">add</i>
+          <span class="visuallyhidden">Add</span>
+        </button>
+      </div>
+    </header>
     <main class="mdl-layout__content">
       <div class="pools-site__posts mdl-grid">
 
-        <!-- recently events -->
-        <div class="mdl-card recently-events mdl-cell mdl-cell--8-col">
-          <div class="mdl-card__media mdl-color-text--grey-50">
-            <h3><a href="events/details001.html">Image your 2020 with Streamer Coffee</a></h3>
+        <div class="mdl-card mdl-cell mdl-cell--6-col">
+          <div class="mdl-card__media mdl-color-text--grey-50 flg-japan">
+            <h3><a href="ja/index.html"></a></h3>
           </div>
-          <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-            <!-- <div class="minilogo"> -->
-            <i class="material-icons mdl-color-text--black" role="presentation">free_breakfast</i>
-            <!-- </div> -->
-            <div>
-              <strong>2020/1/24 fri</strong>
-              <strong>@Streamer Coffee Company Sakae 名古屋市中区栄3丁目28−30</strong>
-            </div>
+          <div class="mdl-card__supporting-text">
+            ベトナム交流会のページにお越しいただきありがとうございます。ブックマークは言語選択後に行ってください。
           </div>
+          <!-- <div class="mdl-card__actions mdl-card--border"> -->
+            <!-- <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="ja/index.html">
+              日本語ページを表示する
+            </a> -->
+            <!-- Accent-colored raised button with ripple -->
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='ja/index.html'">
+              日本語ページを表示する
+            </button>
+          <!-- </div> -->
         </div>
 
-
-        <!-- total joiner -->
-        <div class="mdl-card something-else mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop">
-          <button class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-color--accent" onclick="location.href='contact/contact.html'">
-            <i class="material-icons mdl-color-text--white" role="presentation">contact_support</i>
-            <span class="visuallyhidden">contact_support</span>
+        <div class="mdl-card mdl-cell mdl-cell--6-col">
+          <div class="mdl-card__media mdl-color-text--grey-50 flg-vietnam">
+            <h3><a href='#'></a></h3>
+          </div>
+          <div class="mdl-card__supporting-text">
+            Cảm ơn bạn đã ghé thăm trang Trao đổi Việt Nam. Vui lòng đánh dấu sau khi chọn ngôn ngữ.
+          </div>
+          <!-- <div class="mdl-card__actions mdl-card--border">
+            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+              Hiển thị trang tiếng việt
+            </a>
+          </div> -->
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='#'">
+            Hiển thị trang tiếng việt
           </button>
-          <div class="mdl-card__media mdl-color--white mdl-color-text--grey-600">
-            <img src="images/logo.jpg">
-            +1,337
-
-          </div>
         </div>
 
-
-        <!-- top message -->
-        <!-- <div class="mdl-card message mdl-cell mdl-cell--12-col">
-          <div class="mdl-card__title mdl-color-text--grey-50">
-            <h3 class="quote">おしゃれなトップモットーが入ります。</h3>
-          </div>
-          <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-            おしゃれなトップメッセージが入ります。おしゃれなトップメッセージが入ります。おしゃれなトップメッセージが入ります。
-            おしゃれなトップメッセージが入ります。おしゃれなトップメッセージが入ります。おしゃれなトップメッセージが入ります。
-            おしゃれなトップメッセージが入ります。おしゃれなトップメッセージが入ります。おしゃれなトップメッセージが入ります。
-          </div>
-          <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-            <div class="minilogo"></div>
-            <div>
-              <strong>CEO 平岩</strong>
-              <span>2019/12/12</span>
-            </div>
-          </div>
-        </div> -->
-
-        <!-- Our histry -->
-        <div class="mdl-card histry mdl-cell mdl-cell--12-col">
-          <div class="mdl-card__media mdl-color-text--grey-50">
-            <h3><a href="history/history.html">Our history</a></h3>
-          </div>
-
-          <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-            コーヒーを飲みながら、ソファでくつろぎ、ぼんやりと自分の未来を妄想する時間。初めてのデートの作戦を考えながら、お酒を一人で飲む時間。
-            子どもの頃、夏休みにプールに浮かびながら、友だちが集まってくるのを待っている時間。
-            僕たちPoolsは、そんな「ワクワク」「ドキドキ」「究極にリラックス」な時間を創造するクリエイティブ集団です。
-          </div>
-        </div>
-
-        <!-- all events -->
-        <div class="mdl-card histry mdl-cell mdl-cell--12-col">
-          <div class="mdl-card__media mdl-color-text--grey-50">
-            <h3><a href="history/history.html">All Events</a></h3>
-          </div>
-
-          <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-            コーヒーを飲みながら、ソファでくつろぎ、ぼんやりと自分の未来を妄想する時間。初めてのデートの作戦を考えながら、お酒を一人で飲む時間。
-            子どもの頃、夏休みにプールに浮かびながら、友だちが集まってくるのを待っている時間。
-            僕たちPoolsは、そんな「ワクワク」「ドキドキ」「究極にリラックス」な時間を創造するクリエイティブ集団です。
-          </div>
-        </div>
-
-
-        <div class="mdl-card contact mdl-cell mdl-cell--12-col">
-          <div class="mdl-card__media mdl-color-text--grey-50">
-            <h3><a href="contact/contact.html">Contact Us</a></h3>
-          </div>
-          <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-            僕たちPoolsは、そんな「ワクワク」「ドキドキ」「究極にリラックス」な時間を創造するクリエイティブ集団です。<br>
-            音楽、本、植物、アートなど、各分野のプロフェッショナルと連携しながら、街のカフェやバー、企業のイベントプロデュースを行っております。
-          </div>
-        </div>
       </div>
 
 
 
-      <footer class="mdl-mini-footer">
+      <!-- <footer class="mdl-mini-footer">
         <div class="mdl-mini-footer--left-section">
-          <!-- <button class="mdl-mini-footer--social-btn social-btn social-btn__twitter">
+          <button class="mdl-mini-footer--social-btn social-btn social-btn__twitter">
               <span class="visuallyhidden">Twitter</span>
-            </button> -->
+            </button>
           <button class="mdl-mini-footer--social-btn social-btn social-btn__blogger" onclick="location.href='https://www.facebook.com/Pools-103451241154898/'">
             <span class="visuallyhidden">Facebook</span>
           </button>
@@ -171,7 +145,7 @@
             <span class="visuallyhidden">share</span>
           </button>
         </div>
-      </footer>
+      </footer> -->
     </main>
     <div class="mdl-layout__obfuscator"></div>
   </div>
