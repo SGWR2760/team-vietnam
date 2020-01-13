@@ -725,7 +725,36 @@ body .pools-site {
   min-height: 350px;
 }
 
-.black-filter{
-  background-color: rgba(0,0,0,0.6);
-  height: 350px;
+.fb-logo{
+  display: inline-block;
+   padding: 1em 1em;
+   text-decoration: none;
+   color: #b0b0b0;
+   border: solid 2px #b0b0b0;
+   border-radius: 2px;
+   transition: .4s;
+   background-color: white;
+   width:auto;
+   margin-bottom: 4px;
+   margin-left: 4px;
+   margin-right: 4px;
+   height: 16px;
+}
+
+.chip-text{
+  width:fit-content;
+  display: inline-block;
+  margin: 4px 16px 8px 16px;
+}
+
+.kazuma-pic2 {
+  background-image: url('../../images/sample/sample.jpg');
+  margin-bottom: 16px;
+  min-height: 350px;
+
+}
+
+.subtitle{
+  margin: 4px 16px 4px 16px ;
+
 }
