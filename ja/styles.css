@@ -695,7 +695,7 @@ body .pools-site {
 header {
   padding:16px;
   background-color: #F0F0F0;
-  /* z-index: 10; */
+  z-index: 10;
   position: relative;
 
 }
