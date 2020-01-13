@@ -33,7 +33,7 @@ header {
 }
 
 .navigtion-img{
-  background-image: url('../../../../images/navigation/global.jpg');
+  background-image: url('../../../images/navigation/global.jpg');
   margin-bottom: 16px;
   min-height: 250px;
   background-size: contain;
@@ -208,7 +208,7 @@ body .pools-site {
   box-sizing: border-box;
   /* background-size:contain; */
   background-repeat: no-repeat;
-  background-image: url('../../../../images/recently-events.jpg');
+  background-image: url('../../../images/recently-events.jpg');
   padding-bottom: calc(100%*584/960);/* calc(100*ImageHeight/ImageWidth)% */
   background-size: 100% auto;
   background-color: #b0b0b0;
@@ -792,7 +792,7 @@ padding-left:20%
 
 .sample-img{
   background-repeat: no-repeat;
-  background-image: url('../../../../images/sample/sample.jpg');
+  background-image: url('../../../images/sample/sample.jpg');
   padding-bottom: calc(100%*584/960);/* calc(100*ImageHeight/ImageWidth)% */
   background-size: 100% auto;
   background-color: #b0b0b0;
