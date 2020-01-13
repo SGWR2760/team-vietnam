@@ -789,3 +789,11 @@ padding-left:20%
   text-align:center;
 
   }
+
+.sample-img{
+  background-repeat: no-repeat;
+  background-image: url('../../../../images/sample/sample.jpg');
+  padding-bottom: calc(100%*584/960);/* calc(100*ImageHeight/ImageWidth)% */
+  background-size: 100% auto;
+  background-color: #b0b0b0;
+}
