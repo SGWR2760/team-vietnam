@@ -129,19 +129,13 @@
             <a class="mdl-button mdl-js-button mdl-js-ripple-effect">もっと読む</a>
             <div class="mdl-layout-spacer"></div>
 
-            <!-- <button id="demo-show-toast" class="mdl-button mdl-js-button mdl-button--raised" type="button">Show Toast</button>
-            <div id="demo-toast-example" class="mdl-js-snackbar mdl-snackbar">
-              <div class="mdl-snackbar__text"></div>
-              <button class="mdl-snackbar__action" type="button"></button>
-            </div> -->
-
           </div>
 
         </div>
 
 
         <!-- total joiner -->
-        <div class="mdl-card something-else mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop">
+        <!-- <div class="mdl-card something-else mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop">
           <button class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-color--accent" onclick="location.href='contact/contact.html'">
             <i class="material-icons mdl-color-text--white" role="presentation">contact_support</i>
             <span class="visuallyhidden">contact_support</span>
@@ -151,48 +145,41 @@
             +1,337
 
           </div>
-        </div>
+        </div> -->
 
         <!-- Our histry -->
         <div class="mdl-card histry mdl-cell mdl-cell--12-col">
           <div class="mdl-card__media mdl-color-text--grey-50">
-            <h3><a href="history/history.html">Our history</a></h3>
+            <h3><a href="history/history.html">過去のイベント</a></h3>
           </div>
 
           <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-            コーヒーを飲みながら、ソファでくつろぎ、ぼんやりと自分の未来を妄想する時間。初めてのデートの作戦を考えながら、お酒を一人で飲む時間。
-            子どもの頃、夏休みにプールに浮かびながら、友だちが集まってくるのを待っている時間。
-            僕たちPoolsは、そんな「ワクワク」「ドキドキ」「究極にリラックス」な時間を創造するクリエイティブ集団です。
+            今まで皆様と開催してきたイベントをご覧いただけます。
+          </div>
+          <div class="mdl-card__actions mdl-card--border">
+            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" onclick="location.href='aboutus/aboutus.html'">もっと読む</a>
+            <div class="mdl-layout-spacer"></div>
           </div>
         </div>
 
-        <!-- all events -->
+        <!--about us -->
         <div class="mdl-card histry mdl-cell mdl-cell--12-col">
           <div class="mdl-card__media mdl-color-text--grey-50">
-            <h3><a href="history/history.html">All Events</a></h3>
+            <h3><a href="aboutus/aboutus.html">チーム概要</a></h3>
           </div>
 
           <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-            コーヒーを飲みながら、ソファでくつろぎ、ぼんやりと自分の未来を妄想する時間。初めてのデートの作戦を考えながら、お酒を一人で飲む時間。
-            子どもの頃、夏休みにプールに浮かびながら、友だちが集まってくるのを待っている時間。
-            僕たちPoolsは、そんな「ワクワク」「ドキドキ」「究極にリラックス」な時間を創造するクリエイティブ集団です。
+            私達は名古屋を中心に日本とベトナムの架け橋を作るべく活動をしています。<br>
+            私達がどのようなチームなのかをご紹介します。
+          </div>
+          <div class="mdl-card__actions mdl-card--border">
+            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" onclick="location.href='aboutus/aboutus.html'">もっと読む</a>
+            <div class="mdl-layout-spacer"></div>
           </div>
         </div>
 
 
-        <div class="mdl-card contact mdl-cell mdl-cell--12-col">
-          <div class="mdl-card__media mdl-color-text--grey-50">
-            <h3><a href="contact/contact.html">Contact Us</a></h3>
-          </div>
-          <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-            僕たちPoolsは、そんな「ワクワク」「ドキドキ」「究極にリラックス」な時間を創造するクリエイティブ集団です。<br>
-            音楽、本、植物、アートなど、各分野のプロフェッショナルと連携しながら、街のカフェやバー、企業のイベントプロデュースを行っております。
-          </div>
-        </div>
       </div>
-      <!-- <span id="share_btn" data-clipboard-text="file:///Users/n-sugawara/Documents/%E3%83%95%E3%82%9A%E3%83%AD%E3%82%B7%E3%82%99%E3%82%A7%E3%82%AF%E3%83%88/%E4%BB%96%E7%A4%BE/vietnam/team-vietnam/ja/index.html">この記事のURLとタイトルをコピー</span> -->
-
-
 
       <footer class="mdl-mini-footer">
         <div class="mdl-mini-footer--left-section">
@@ -245,18 +232,24 @@
       'use strict';
 
       var data;
-      data = {message: 'コピーされました'};
+      data = {
+        message: 'コピーされました'
+      };
 
       var clipboard = new Clipboard('file:///Users/n-sugawara/Documents/%E3%83%95%E3%82%9A%E3%83%AD%E3%82%B7%E3%82%99%E3%82%A7%E3%82%AF%E3%83%88/%E4%BB%96%E7%A4%BE/vietnam/team-vietnam/ja/index.html');
       clipboard.on('success', function(e) {
         //コピー成功時
         // $("#share_btn").addClass('is-copied').text('コピーされました');
-        data = {message: 'コピーされました'};
+        data = {
+          message: 'コピーされました'
+        };
       });
       clipboard.on('error', function(e) {
         //エラー時
         // $("#share_btn").addClass('is-copied').text('お使いの端末はこの機能に対応していません');
-        data = {message: 'お使いの端末はこの機能に対応していません'};
+        data = {
+          message: 'お使いの端末はこの機能に対応していません'
+        };
       });
 
       console.log(clipboard.on)
