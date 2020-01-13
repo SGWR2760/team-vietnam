@@ -61,7 +61,7 @@ body .pools-site {
 }
 
 .pools-site.mdl-layout .mdl-layout__content {
-  padding-top: 30px;
+  padding-top: 64px;
   position: relative;
   -webkit-overflow-scrolling: touch;
 }
@@ -702,9 +702,13 @@ header {
   position: relative;
   font-family: 'Roboto', 'Helvetica', sans-serif;
   font-size: 16px;
-
   color:#555;
 
+}
+
+.navigtion-list{
+  color:#222;
+  text-decoration-line: none;
 }
 
 /*チェックボックス等は非表示に*/
