@@ -28,6 +28,18 @@ header {
 
 }
 
+.demo-list-icon {
+  width: 300px;
+}
+
+.navigtion-img{
+  background-image: url('../images/navigation/global.jpg');
+  margin-bottom: 16px;
+  min-height: 250px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .navigtion-list{
   color:#222;
   text-decoration-line: none;
