@@ -161,7 +161,6 @@ body .pools-site {
 }
 
 .pools-site.mdl-layout .mdl-layout__content {
-  padding-top: 64px;
   position: relative;
   -webkit-overflow-scrolling: touch;
 }
