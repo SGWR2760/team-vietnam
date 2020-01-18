@@ -832,6 +832,11 @@ body .pools-site {
   min-height: 350px;
 }
 
+.umi-pic{
+  background-image: url('../img/member/umi.jpg');
+  min-height: 350px;
+}
+
 .eventHistory-pic{
   background-image: url('../img/aboutus/eventHistory.jpg');
   min-height: 350px;
