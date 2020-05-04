@@ -1,0 +1,68 @@
+body{
+  font-family: 'Kosugi Maru', sans-serif;
+}
+
+.alert01{
+  margin: 16px;
+}
+.bi-exclamation-triangle-fill{
+  margin-right: 8px;
+  padding-bottom: 2px;
+}
+
+.information {
+  padding: 36px 0px;
+  background-color: #e8e8e8;
+}
+
+.informationTitle {
+  font-size: 1.5rem;
+  padding: 8px;
+  text-align: center;
+  font-family: 'Kosugi Maru', sans-serif;
+}
+
+.informationTab {
+  text-align: center;
+  padding-left: unset;
+}
+
+.otherContent {
+  padding-top: 36px;
+}
+
+.listcontentItem {
+  display: flex;
+  justify-content:space-between;
+}
+
+.listContent {
+  padding: 16px;
+}
+
+
+.rounded-pill {
+  background-color: #ffffff;
+  margin: 16px;
+}
+
+.eventInfo {
+  margin: 8px;
+}
+
+.card {
+  margin: 8px 8px;
+}
+
+.media {
+  margin: 8px 4px;
+}
+
+.jumbotron {
+  margin-bottom: 0px;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 8px;
+}
