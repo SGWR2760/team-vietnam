@@ -20,18 +20,27 @@ const usefulInfo = {
   vn: "?????????????????????",
   en: "Useful information"
 }
-const constractionName = {
-  jp: "",
-  vn: "",
-  en: ""
+const aboutus = {
+  jp: "チーム概要",
+  vn: "vn???????",
+  en: "About us"
+}
+const donate = {
+  jp: "寄付",
+  vn: "vn???????",
+  en: "Donate"
+}
+const contactus = {
+  jp: "お問い合わせ",
+  vn: "vn????????",
+  en: "Contact us"
+}
+const disclaimer = {
+  jp: "免責事項",
+  vn: "vn????????",
+  en: "disclaimer"
 }
 
 function ins(constName) {
   document.write(constName);
-}
-
-function test() {
-  var html;
-  html = groupName;
-  document.write(html);
 }

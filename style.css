@@ -1,11 +1,26 @@
-body{
+body {
   font-family: 'Kosugi Maru', sans-serif;
 }
 
-.alert01{
+.card-title.info{
+  margin-top:32px;
+}
+
+.bg-primary {
+  background-color: #E3B505 !important;
+}
+
+.languageLink{
+  color:#212529;
+}
+
+
+
+.alert01 {
   margin: 16px;
 }
-.bi-exclamation-triangle-fill{
+
+.bi-exclamation-triangle-fill {
   margin-right: 8px;
   padding-bottom: 2px;
 }
@@ -33,13 +48,12 @@ body{
 
 .listcontentItem {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
 .listContent {
   padding: 16px;
 }
-
 
 .rounded-pill {
   background-color: #ffffff;
