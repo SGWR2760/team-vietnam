@@ -2,19 +2,17 @@ body {
   font-family: 'Kosugi Maru', sans-serif;
 }
 
-.card-title.info{
-  margin-top:32px;
+.card-title.info {
+  margin-top: 32px;
 }
 
 .bg-primary {
   background-color: #E3B505 !important;
 }
 
-.languageLink{
-  color:#212529;
+.languageLink {
+  color: #212529;
 }
-
-
 
 .alert01 {
   margin: 16px;
@@ -79,4 +77,12 @@ body {
 .copyright {
   text-align: center;
   padding-top: 8px;
+}
+
+@media screen and (max-width: 480px) {}
+
+@media screen and (min-width: 481px) {
+  .card {
+    width: 60%;
+  }
 }
