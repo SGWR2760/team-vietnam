@@ -1,4 +1,4 @@
-<html lang="ja">
+<html lang="en">
 
 <head>
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
@@ -6,9 +6,9 @@
   <meta name="keywords" content="">
   <meta charset="UTF-8">
 
-  <meta property="og:type" content="webpage" />
-  <meta property="og:title" content="お問い合わせ" />
-  <meta property="og:description" content="" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="******************" />
+  <meta property="og:description" content="***************" />
   <meta property="og:url" content="***************" />
   <meta property="og:site_name" content="************************" />
   <meta property="og:image" content="******************************.jpg" />
@@ -23,23 +23,25 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
 
+  <!-- Facebookの投稿を挿入する際に使用 -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v6.0"></script>
+
   <link rel="stylesheet" href="./../../style.css">
   <script src="./../../js/sentence.js"></script>
   <script src="./../../js/multilanguage.js"></script>
   <script>
-    const ln = "jp";
+    const ln = "en";
     const depth = 2;
   </script>
+<style>
+h1{
+  text-align: center;
+  margin: 36px 0px;
+  padding: 8px;
+}
 
-  <style>
-    h2 {
-      padding: 48px 0px 12px 0px;
-      /* text-align: center; */
-    }
-    a {
-      text-decoration: none;
-    }
-  </style>
+</style>
 
 </head>
 
@@ -55,29 +57,39 @@
       headerAlert()
     </script>
 
+
+    <h1>All Events</h1>
     <div class="mainContent">
       <div class="card">
-        <img src="./../../images/contactus/header.jpg" class="card-img-top" alt="...">
+        <img src="./../../images/info/info001/header.png" class="card-img-top" alt="...">
         <div class="card-body">
-          <h1 class="card-title">お問い合わせ</h1>
+          <h2 class="card-title">Event 001 sample</h2>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="./events001.html" class="btn btn-primary">もっと見る</a>
+        </div>
+      </div>
 
-          <p class="card-text">
-            以下のフォームよりご記入ください。</p>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf2GuANIIEi-8WGo8l77x-oZV2NtLuXwOtPtctLtgZ_tb-tzA/viewform?embedded=true"  frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+      <div class="card">
+        <img src="./../../images/info/info001/header.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h2 class="card-title">タイトルは簡潔に書きます</h2>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="./events001.html" class="btn btn-primary">もっと見る</a>
+        </div>
+      </div>
 
+      <div class="otherContent">
+        <div class="listContent">
+          <ul class="list-group">
+            <li class="list-group-item listcontentItem">イベント情報一覧</li>
+            <li class="list-group-item listcontentItem">お役立ち情報一覧</li>
+            <li class="list-group-item ">過去のイベント</li>
+          </ul>
         </div>
       </div>
     </div>
-    <div class="otherContent">
-      <div class="listContent">
-        <ul class="list-group">
-          <li class="list-group-item listcontentItem">イベント情報一覧</li>
-          <li class="list-group-item listcontentItem">お役立ち情報一覧</li>
-          <li class="list-group-item ">過去のイベント</li>
-        </ul>
-      </div>
-    </div>
-    </div>
+
+
   </main>
   <footer>
     <script>

@@ -9,7 +9,7 @@ function insertHeader(type, depth) {
   html += '          ins(groupName.' + type + ');';
   html += '        </script>';
   html += '      </h5>';
-  html += '      <span class="">メニューです。</span>';
+  html += '      <span class=""></span>';
   html += '    </div>';
   html += '    <ul class="list-group list-group-flush">';
   html += '      <li class="list-group-item bg-primary">';
