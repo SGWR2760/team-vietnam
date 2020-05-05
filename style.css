@@ -14,16 +14,26 @@ body {
   color: #212529;
 }
 
+.infoNav{
+
+}
+
 .alert01 {
   margin: 16px;
 }
 
+#pills-tab{
+  padding: 36px 0px;
+}
+
 #pills-home-tab{
-  font-size: 0.8rem;
+  font-size: 1rem;
+  display: initial;
 }
 
 #pills-profile-tab{
-  font-size: 0.8rem;
+  font-size: 1rem;
+  display: initial;
 }
 
 .bi-exclamation-triangle-fill {
