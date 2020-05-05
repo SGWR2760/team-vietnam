@@ -18,6 +18,14 @@ body {
   margin: 16px;
 }
 
+#pills-home-tab{
+  font-size: 0.8rem;
+}
+
+#pills-profile-tab{
+  font-size: 0.8rem;
+}
+
 .bi-exclamation-triangle-fill {
   margin-right: 8px;
   padding-bottom: 2px;
