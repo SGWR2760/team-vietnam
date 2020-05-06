@@ -34,14 +34,13 @@
     const ln = "jp";
     const depth = 2;
   </script>
-<style>
-h1{
-  text-align: center;
-  margin: 36px 0px;
-  padding: 8px;
-}
-
-</style>
+  <style>
+    h1 {
+      text-align: center;
+      margin: 36px 0px;
+      padding: 8px;
+    }
+  </style>
 
 </head>
 
@@ -60,32 +59,32 @@ h1{
 
     <h1>お役立ち情報一覧</h1>
     <div class="mainContent">
-      <div class="card">
+      <!-- <div class="card">
         <img src="./../../images/info/info001/header.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h2 class="card-title">お役立ち001サンプル</h2>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           <a href="./info001.html" class="btn btn-primary">もっと見る</a>
         </div>
-      </div>
+      </div> -->
 
-      <div class="card">
+      <!-- <div class="card">
         <img src="./../../images/info/info001/header.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h2 class="card-title">タイトルは簡潔に書きます</h2>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           <a href="./info001.html" class="btn btn-primary">もっと見る</a>
         </div>
+      </div> -->
+
+      <div class="alert alert-info" role="alert">
+        <img src="./../../images/info/sorry.svg"> まだお役立ち情報はありません。
       </div>
 
       <div class="otherContent">
-        <div class="listContent">
-          <ul class="list-group">
-            <li class="list-group-item listcontentItem">イベント情報一覧</li>
-            <li class="list-group-item listcontentItem">お役立ち情報一覧</li>
-            <li class="list-group-item ">過去のイベント</li>
-          </ul>
-        </div>
+        <script>
+          insertReccomentdation(ln, depth);
+        </script>
       </div>
     </div>
 
