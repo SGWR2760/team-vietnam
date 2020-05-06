@@ -1,9 +1,12 @@
+const pagepath = "https://clever-mirzakhani-8e276f.netlify.app"
+
 function insertHeader(type, depth) {
   var completePath = buildPath(depth);
   var html = "";
   html += '<div class="pos-f-t">';
   html += '  <div class="collapse" id="navbarToggleExternalContent">';
-  html += '    <div class="bg-primary p-4">'
+  html += '    <div class="bg-primary p-4">';
+  // グループ名
   html += '      <h5 class="text-white h4">';
   html += '        <script>';
   html += '          ins(groupName.' + type + ');';
@@ -20,7 +23,7 @@ function insertHeader(type, depth) {
   html += '      <li class="list-group-item bg-primary"><script>ins(aboutus.' + type + ');</script></li>';
   html += '      <li class="list-group-item bg-primary"><script>ins(contactus.' + type + ');</script></li>';
   html += '      <li class="list-group-item bg-primary"><img src="./' + completePath + 'images/index/language.svg"></img>　Tiếng việt</li>';
-  html += '      <li class="list-group-item bg-primary"><img src="./' + completePath + 'images/index/language.svg"></img><a class="languageLink" href="/en/index.html">　English</a></li>';
+  html += '      <li class="list-group-item bg-primary"><img src="./' + completePath + 'images/index/language.svg"></img><a class="headerLink" href="'+ pagepath +'/en/index.html">　English</a></li>';
   html += '    </ul>';
   html += '  </div>';
   html += '  <nav class="navbar navbar-dark bg-primary">';
