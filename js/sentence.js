@@ -59,6 +59,7 @@ const allPastEvents = {
   en: 'Past Events'
 }
 
+
 function ins(constName) {
   document.write(constName);
 }

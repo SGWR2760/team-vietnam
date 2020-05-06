@@ -5,6 +5,7 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta charset="UTF-8">
+  <title>トップ</title>
 
   <meta property="og:type" content="website" />
   <meta property="og:title" content="******************" />
@@ -27,18 +28,23 @@
   <script src="js/sentence.js"></script>
   <script src="js/multilanguage.js"></script>
   <script>
-    const ln= "jp"
+    const ln = "jp"
+    document.title = groupName.jp + ' | ' + document.title ;
   </script>
 
 </head>
 
 <body>
   <header>
-    <script>insertHeader(ln,0);</script>
+    <script>
+      insertHeader(ln, 0);
+    </script>
   </header>
   <main>
 
-    <script>headerAlert()</script>
+    <script>
+      headerAlert()
+    </script>
 
     <!-- カルーセル -->
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -141,14 +147,18 @@
       </div>
 
       <div class="otherContent">
-        <script>insertReccomentdation(ln,0);</script>
+        <script>
+          insertReccomentdation(ln, 0);
+        </script>
       </div>
     </div>
 
 
   </main>
   <footer>
-    <script>insertFooter(ln,0);</script>
+    <script>
+      insertFooter(ln, 0);
+    </script>
   </footer>
 </body>
 
