@@ -23,24 +23,40 @@ const usefulInfo = {
   en: 'Useful information'
 }
 const aboutus = {
-  jp: '<a class="headerLink" href="'+ url +'/jp/aboutus/aboutus.html">チーム概要あああ</a>',
+  jp: '<a class="headerLink" href="' + url + '/jp/aboutus/aboutus.html">チーム概要</a>',
   vn: 'vn???????',
   en: 'About us'
 }
 const donate = {
-  jp: '<a class="headerLink" href="'+ url +'/jp/donate/donate.html">寄付</a>',
+  jp: '<a class="headerLink" href="' + url + '/jp/donate/donate.html">寄付</a>',
   vn: 'vn???????',
   en: 'Donate'
 }
 const contactus = {
-  jp: '<a class="headerLink" href="'+ url +'/jp/contactus/contactus.html">お問い合わせ</a>',
+  jp: '<a class="headerLink" href="' + url + '/jp/contactus/contactus.html">お問い合わせ</a>',
   vn: 'vn????????',
   en: 'Contact us'
 }
 const disclaimer = {
-  jp: '<a class="headerLink" href="'+ url +'/jp/disclaimer/disclaimer.html">免責事項</a>',
+  jp: '<a class="headerLink" href="' + url + '/jp/disclaimer/disclaimer.html">免責事項</a>',
   vn: 'vn????????',
   en: 'disclaimer'
+}
+
+const allEventsInfo = {
+  jp: '<a class="headerLink" href="' + url + '/jp/events/allevents.html">イベント情報一覧</a>',
+  vn: 'vn????????',
+  en: 'All event info'
+}
+const allUsefulInfo = {
+  jp: '<a class="headerLink" href="' + url + '/jp/information/allinfo.html">お役立ち情報一覧</a>',
+  vn: '',
+  en: 'All topicks'
+}
+const allPastEvents = {
+  jp: '<a class="headerLink" href="' + url + '/jp/information/allinfo.html">過去のイベント</a>',
+  vn: '',
+  en: 'Past Events'
 }
 
 function ins(constName) {
