@@ -5,6 +5,10 @@ body {
 .card-title.info {
   margin-top: 32px;
 }
+.opps{
+  text-align: center;
+  padding: 36px;
+}
 
 .bg-primary {
   background-color: #E3B505 !important;
