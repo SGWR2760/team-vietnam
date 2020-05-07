@@ -62,13 +62,13 @@ const allPastEvents = {
 const pageShowJp = {
   jp:'<a class="headerLink" href="'+ url +'/index.html">  日本語のページを表示</a>',
   vn:'vn??????',
-  en:'Japanese Page'
+  en:'<a class="headerLink" href="'+ url +'/index.html">  Japanese Page</a>'
 }
 
 const pageShowEn = {
   jp:'<a class="headerLink" href="'+ url +'/en/index.html">  English Page</a>',
   vn:'vn??????',
-  en:'English Page'
+  en:'<a class="headerLink" href="'+ url +'/en/index.html">  English Page</a>'
 }
 
 const pageShowVn = {
