@@ -50,13 +50,31 @@ const allEventsInfo = {
 }
 const allUsefulInfo = {
   jp: '<a class="headerLink" href="' + url + '/jp/information/allinfo.html">お役立ち情報一覧</a>',
-  vn: '',
+  vn: 'vn??????',
   en: 'All topicks'
 }
 const allPastEvents = {
   jp: '<a class="headerLink" href="' + url + '/jp/information/allinfo.html">過去のイベント</a>',
-  vn: '',
+  vn: 'vn??????',
   en: 'Past Events'
+}
+
+const pageShowJp = {
+  jp:'<a class="headerLink" href="'+ url +'/index.html">  日本語のページを表示</a>',
+  vn:'vn??????',
+  en:'Japanese Page'
+}
+
+const pageShowEn = {
+  jp:'<a class="headerLink" href="'+ url +'/en/index.html">  English Page</a>',
+  vn:'vn??????',
+  en:'English Page'
+}
+
+const pageShowVn = {
+  jp:'<a class="headerLink" href="'+ url +'/vn/index.html">  ベトナム語のページを表示</a>',
+  vn:'vn??????',
+  en:'Vietnamese Page'
 }
 
 

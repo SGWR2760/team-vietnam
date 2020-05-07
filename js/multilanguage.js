@@ -15,15 +15,17 @@ function insertHeader(type, depth) {
   html += '      <span class=""></span>';
   html += '    </div>';
   html += '    <ul class="list-group list-group-flush">';
-  html += '      <li class="list-group-item bg-primary">';
-  html += '        <script>';
-  html += '         ins(informationTitle.' + type + ')';
-  html += '        </script>';
-  html += '      </li>';
   html += '      <li class="list-group-item bg-primary"><script>ins(aboutus.' + type + ');</script></li>';
   html += '      <li class="list-group-item bg-primary"><script>ins(contactus.' + type + ');</script></li>';
-  html += '      <li class="list-group-item bg-primary"><img src="./' + completePath + 'images/index/language.svg"></img>　Tiếng việt</li>';
-  html += '      <li class="list-group-item bg-primary"><img src="./' + completePath + 'images/index/language.svg"></img><a class="headerLink" href="'+ pagepath +'/en/index.html">　English</a></li>';
+  if (type != "jp") {
+    html += '      <li class="list-group-item bg-primary"><img src="./' + completePath + 'images/index/language.svg"></img><script>ins(pageShowJp.' + type + ');</script></li>';
+  }
+  if (type != "en") {
+    html += '      <li class="list-group-item bg-primary"><img src="./' + completePath + 'images/index/language.svg"></img><script>ins(pageShowEn.' + type + ');</script></li>';
+  }
+  if (type != "vn") {
+    html += '      <li class="list-group-item bg-primary"><img src="./' + completePath + 'images/index/language.svg"></img><script>ins(pageShowVn.' + type + ');</script></li>';
+  }
   html += '    </ul>';
   html += '  </div>';
   html += '  <nav class="navbar navbar-dark bg-primary">';
@@ -40,13 +42,17 @@ function insertHeader(type, depth) {
   document.write(html);
 }
 
-function insertFooter(type,depth) {
+function insertFooter(type, depth) {
   var completePath = buildPath(depth);
   var html = "";
   html += '  <div class="jumbotron">';
   html += '    <ul class="list-group">';
-  html += '      <li class="list-group-item"><img src="./' + completePath + 'images/index/language.svg"></img>　ベトナム語のページを表示</li>';
-  html += '      <li class="list-group-item"><img src="./' + completePath + 'images/index/language.svg"></img>　英語のページを表示</li>';
+  // 　日本語のページを表示
+  html += '      <li class="list-group-item"><img src="./' + completePath + 'images/index/language.svg"></img><script>ins(pageShowJp.' + type + ');</script></li>';
+  //  英語のページを表示
+  html += '      <li class="list-group-item"><img src="./' + completePath + 'images/index/language.svg"></img><script>ins(pageShowEn.' + type + ');</script></li>';
+  //  ベトナム語のページを表示
+  html += '      <li class="list-group-item"><img src="./' + completePath + 'images/index/language.svg"></img><script>ins(pageShowVn.' + type + ');</script></li>';
   html += '    </ul>';
   html += '    <ul class="list-group">';
   html += '      <li class="list-group-item aboutus"><script>ins(aboutus.' + type + ');</script></li>';
@@ -63,17 +69,17 @@ function insertFooter(type,depth) {
 
 function headerAlert() {
   var html = "";
-  html += '  <div class="alert alert-warning alert01" role="alert">';
-  html += '    <svg class="bi bi-exclamation-triangle-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">';
-  html += '      <path fill-rule="evenodd"';
-  html += '        d="M8.982 1.566a1.13 1.13 0 00-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5a.905.905 0 00-.9.995l.35 3.507a.552.552 0 001.1 0l.35-3.507A.905.905 0 008 5zm.002 6a1 1 0 100 2 1 1 0 000-2z"';
-  html += '        clip-rule="evenodd" />';
-  html += '    </svg>このページは作成中です。';
-  html += '  </div>';
+  // html += '  <div class="alert alert-warning alert01" role="alert">';
+  // html += '    <svg class="bi bi-exclamation-triangle-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">';
+  // html += '      <path fill-rule="evenodd"';
+  // html += '        d="M8.982 1.566a1.13 1.13 0 00-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5a.905.905 0 00-.9.995l.35 3.507a.552.552 0 001.1 0l.35-3.507A.905.905 0 008 5zm.002 6a1 1 0 100 2 1 1 0 000-2z"';
+  // html += '        clip-rule="evenodd" />';
+  // html += '    </svg>このページは作成中です。';
+  // html += '  </div>';
   document.write(html);
 }
 
-function insertReccomentdation(type, depth){
+function insertReccomentdation(type, depth) {
   var completePath = buildPath(depth);
   var html = "";
   html += ' <div class="listContent">';
@@ -85,8 +91,9 @@ function insertReccomentdation(type, depth){
   html += '   </ul>';
   html += ' </div>';
   document.write(html);
-
 }
+
+
 
 
 function buildPath(depth) {
