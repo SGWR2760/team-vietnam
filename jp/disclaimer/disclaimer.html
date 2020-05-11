@@ -30,8 +30,7 @@
   <script>
     const ln = "jp";
     const depth = 2;
-    document.title = groupName.jp + ' | ' + document.title ;
-
+    document.title = groupName.jp + ' | ' + document.title;
   </script>
 
   <style>
@@ -48,7 +47,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77378955-3"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-77378955-3');
@@ -117,6 +119,17 @@
             <li>交通について</li>
             <p>当イベントへの参加は公共交通機関のご利用をお勧めします。道中や当イベント会場内における事故等には十分お気を付けください。</p>
           </ul>
+          <div class="alert alert-info" role="alert">
+            <span style="display: inline-block;">
+              <div class="headerImg" style="text-align:center">
+                <img src="./../../images/disclaimer/verified_user-black-18dp.svg" class="card-img-top" alt="...">
+              </div>
+            </span>
+            <span style="display: inline-block;">
+              プライバシーポリシーは<a href="./porivacypolicy.html" class="alert-link">こちら</a>
+            </span>
+          </div>
+
         </div>
         <div class="card-footer text-muted">
           策定：2020/05/06
