@@ -10,28 +10,38 @@ body {
   background-color: #E3B505 !important;
 }
 
-.headerLink {
-  color: #212529;
+.coursel1-btn {
+  color: white
 }
 
-.infoNav{
+/* トップページのトグルボタンの色 TODO:外への影響を調べる */
+.nav-item a {
+  color: gray;
+}
 
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: white;
+  background: #E3B505;
+}
+
+.headerLink {
+  color: #212529;
 }
 
 .alert01 {
   margin: 16px;
 }
 
-#pills-tab{
+#pills-tab {
   padding: 36px 0px;
 }
 
-#pills-home-tab{
+#pills-home-tab {
   font-size: 1rem;
   display: initial;
 }
 
-#pills-profile-tab{
+#pills-profile-tab {
   font-size: 1rem;
   display: initial;
 }
@@ -39,6 +49,12 @@ body {
 .bi-exclamation-triangle-fill {
   margin-right: 8px;
   padding-bottom: 2px;
+}
+
+
+
+.image-center{
+  text-align: center;
 }
 
 .information {
@@ -80,7 +96,7 @@ body {
   margin: 8px;
 }
 
-.row{
+.row {
   /* text-align: center; */
   padding: 8px;
 }
@@ -101,11 +117,10 @@ body {
   text-align: center;
   padding-top: 8px;
 
+  @media screen and (max-width: 480px) {}
 
-@media screen and (max-width: 480px) {}
-
-@media screen and (min-width: 481px) {
-  .card {
-    /* width: 45%; */
+  @media screen and (min-width: 481px) {
+    .card {
+      /* width: 45%; */
+    }
   }
-}

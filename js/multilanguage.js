@@ -4,6 +4,16 @@ function insertHeader(type, depth) {
   var completePath = buildPath(depth);
   var html = "";
   html += '<div class="pos-f-t">';
+  html += '  <nav class="navbar navbar-dark bg-primary">';
+  html += '    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">';
+  html += '      <span class=""><svg class="bi bi-justify" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">';
+  html += '          <path fill-rule="evenodd"';
+  html += '            d="M2 12.5a.5.5 0 01.5-.5h11a.5.5 0 010 1h-11a.5.5 0 01-.5-.5zm0-3a.5.5 0 01.5-.5h11a.5.5 0 010 1h-11a.5.5 0 01-.5-.5zm0-3a.5.5 0 01.5-.5h11a.5.5 0 010 1h-11a.5.5 0 01-.5-.5zm0-3a.5.5 0 01.5-.5h11a.5.5 0 010 1h-11a.5.5 0 01-.5-.5z"';
+  html += '            clip-rule="evenodd" />';
+  html += '';
+  html += '    </button>';
+  html += '    <!-- <span class="text-white">text</span> -->';
+  html += '  </nav>';
   html += '  <div class="collapse" id="navbarToggleExternalContent">';
   html += '    <div class="bg-primary p-4">';
   // グループ名
@@ -28,16 +38,7 @@ function insertHeader(type, depth) {
   }
   html += '    </ul>';
   html += '  </div>';
-  html += '  <nav class="navbar navbar-dark bg-primary">';
-  html += '    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">';
-  html += '      <span class=""><svg class="bi bi-justify" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">';
-  html += '          <path fill-rule="evenodd"';
-  html += '            d="M2 12.5a.5.5 0 01.5-.5h11a.5.5 0 010 1h-11a.5.5 0 01-.5-.5zm0-3a.5.5 0 01.5-.5h11a.5.5 0 010 1h-11a.5.5 0 01-.5-.5zm0-3a.5.5 0 01.5-.5h11a.5.5 0 010 1h-11a.5.5 0 01-.5-.5zm0-3a.5.5 0 01.5-.5h11a.5.5 0 010 1h-11a.5.5 0 01-.5-.5z"';
-  html += '            clip-rule="evenodd" />';
-  html += '';
-  html += '    </button>';
-  html += '    <!-- <span class="text-white">text</span> -->';
-  html += '  </nav>';
+
   html += '</div>';
   document.write(html);
 }
