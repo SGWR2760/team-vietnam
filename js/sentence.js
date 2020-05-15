@@ -1,4 +1,4 @@
-const url = "https://clever-mirzakhani-8e276f.netlify.app"
+const url = "https://vietnam-nagoya.work"
 
 const groupName = {
   jp: 'ベトナム交流会',

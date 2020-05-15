@@ -1,4 +1,4 @@
-const pagepath = "https://clever-mirzakhani-8e276f.netlify.app"
+const pagepath = "https://vietnam-nagoya.work"
 
 function insertHeader(type, depth) {
   var completePath = buildPath(depth);
