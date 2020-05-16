@@ -44,12 +44,12 @@ const disclaimer = {
 }
 
 const allEventsInfo = {
-  jp: '<a class="headerLink" href="' + url + '/jp/events/allevents.html">イベント情報一覧</a>',
+  jp: '<a class="headerLink" href="' + url + '/jp/events/">イベント情報一覧</a>',
   vn: 'vn????????',
   en: 'All event info'
 }
 const allUsefulInfo = {
-  jp: '<a class="headerLink" href="' + url + '/jp/information/allinfo.html">お役立ち情報一覧</a>',
+  jp: '<a class="headerLink" href="' + url + '/jp/information/">お役立ち情報一覧</a>',
   vn: 'vn??????',
   en: 'All topicks'
 }
