@@ -25,18 +25,13 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
 
-  <!-- Facebookの投稿を挿入する際に使用 -->
-  <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v6.0"></script>
-
   <link rel="stylesheet" href="./../../style.css">
   <script src="./../../js/sentence.js"></script>
   <script src="./../../js/multilanguage.js"></script>
   <script>
     const ln = "jp";
     const depth = 2;
-    document.title = groupName.jp + ' | ' + document.title ;
-
+    document.title = groupName.jp + ' | ' + document.title;
   </script>
   <style>
     h1 {
@@ -49,7 +44,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77378955-3"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-77378955-3');
@@ -72,27 +70,91 @@
 
     <h1>お役立ち情報一覧</h1>
     <div class="mainContent">
-      <!-- <div class="card">
-        <img src="./../../images/info/info001/header.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h2 class="card-title">お役立ち001サンプル</h2>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="./info001.html" class="btn btn-primary">もっと見る</a>
+      <div class="accordion m-2" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <span class="badge badge-pill badge-warning">New</span> 基本の情報
+              </button>
+            </h2>
+          </div>
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">ベトナムの人となり</h5>
+                        <p class="card-text">
+                          言い換えるなら、性格や国民性。<br>
+                          それらは実際、人間の数だけ違いはあるもので、それを定義することに大きな意味はないかもしれません。<br>
+                          とは言ってもやはり、日本人にとってはベトナムは外国であり、「そんな考え方をするのか」とおどろく場面も多々あります。</p>
+                        <a href="https://vietnam-nagoya.work/jp/information/basic/info001.html" class="btn btn-warning">もっと見る</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Collapsible Group Item #2
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+              aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+              craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Collapsible Group Item #3
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+              aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+              craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
         </div>
       </div> -->
 
-      <!-- <div class="card">
-        <img src="./../../images/info/info001/header.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h2 class="card-title">タイトルは簡潔に書きます</h2>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="./info001.html" class="btn btn-primary">もっと見る</a>
+
+      <!-- <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><span class="badge badge-secondary">New</span> ベトナムの人となり</h5>
+                <p class="card-text">
+                  言い換えるなら、性格や国民性。<br>
+                  それらは実際、人間の数だけ違いはあるもので、それを定義することに大きな意味はないかもしれません。<br>
+                  とは言ってもやはり、日本人にとってはベトナムは外国であり、「そんな考え方をするのか」とおどろく場面も多々あります。</p>
+                <a href="https://vietnam-nagoya.work/jp/information/basic/info001.html" class="btn btn-warning">もっと見る</a>
+              </div>
+            </div>
+          </div>
         </div>
+
       </div> -->
 
-      <div class="alert alert-info" role="alert">
-        <img src="./../../images/info/sorry.svg"> まだお役立ち情報はありません。
-      </div>
+
 
       <div class="otherContent">
         <script>
