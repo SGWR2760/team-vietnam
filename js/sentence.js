@@ -35,7 +35,7 @@ const donate = {
 const contactus = {
   jp: '<a class="headerLink" href="' + url + '/jp/contactus/contactus.html">お問い合わせ</a>',
   vn: 'vn????????',
-  en: 'Contact us'
+  en: '<a class="headerLink" href="' + url + '/en/contactus/contactus.html">Contact us</a>',
 }
 const disclaimer = {
   jp: '<a class="headerLink" href="' + url + '/jp/disclaimer/disclaimer.html">免責事項</a>',
