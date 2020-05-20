@@ -23,6 +23,7 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
   <script src="js/sentence.js"></script>
@@ -31,6 +32,40 @@
     const ln = "jp"
     document.title = groupName.jp + ' | ' + document.title;
   </script>
+  <style>
+    /* donate専用 */
+    .donateTitle {
+      text-align: right;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      width: 100%;
+      height: 3.2rem;
+
+    }
+
+    .donateContainer {
+      vertical-align: middle;
+      font-family: 'Sawarabi Mincho', sans-serif;
+    }
+
+    .carousel-caption {
+      top: 0px;
+      right: 10%;
+      left: 20%;
+    }
+
+    .donateheader {
+      color: #222222;
+      font-family: 'Sawarabi Mincho', sans-serif;
+    }
+  </style>
+
+
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77378955-3"></script>
   <script>
@@ -69,10 +104,14 @@
         <div class="carousel-item active">
           <img src="./images/index/header-1.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption">
-            <!-- <h3>ベトナム交流会</h3>
-            <p>since 2018</p> -->
-            <!-- <button class="btn btn-outline-light coursel1-btn" type="submit">もっと詳しく</button> -->
-            <p></p>
+            <!-- 特設 -->
+            <div class="donateContainer">
+              <div class="donateTitle">
+                <h3 class="donateheader">私達に今できること</h3>
+                <a class="btn btn-dark" href="https://vietnam-nagoya.work/jp/information/campaign/index.html" role="button">もっと詳しく</a>
+              </div>
+            </div>
+            <!-- 特設ここまで -->
           </div>
         </div>
         <div class="carousel-item">
@@ -262,10 +301,24 @@
 
           <div class="container">
             <div class="row">
+
+              <div class="col-sm-6">
+                <div class="card mb-2">
+                  <img src="./images/campaign/header.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h2 class="card-title">私達に今できること</h2>
+                    <p class="card-text">
+                      新型コロナウイルス感染症に罹患された皆様、及び関係者の皆様に、謹んでお見舞い申し上げます。このページでは新型コロナウイルスに関する寄附情報などを集めています。
+                    </p>
+                    <a class="btn btn-dark" href="https://vietnam-nagoya.work/jp/information/campaign/index.html" role="button">もっと詳しく</a>
+                  </div>
+                </div>
+              </div>
+
               <div class="col-sm-6">
                 <div class="card mt-2">
                   <div class="card-body">
-                    <h5 class="card-title"><span class="badge badge-secondary">New</span> ベトナムの人となり</h5>
+                    <h5 class="card-title"> ベトナムの人となり</h5>
                     <p class="card-text">
                       言い換えるなら、性格や国民性。<br>
                       それらは実際、人間の数だけ違いはあるもので、それを定義することに大きな意味はないかもしれません。<br>
@@ -282,7 +335,7 @@
                     <p class="card-text">
                       ベトナムの歴史を、ベトナムに最初の統治国家ができるまでの<strong>黎明期</strong>、千年にわたる中国による支配からの脱却までの<strong>北属期</strong>、中国との対立の末に阮朝成立に伴い「越南」の名を得た<strong>対北進南期</strong>、アヘン戦争から仏領時代をへてベトナム戦争までの<strong>近代史</strong>、の4つに分けて簡単に概説しています。
                     </p>
-                      <a href="https://vietnam-nagoya.work/jp/information/basic/info002.html" class="btn btn-warning">もっと見る</a>
+                    <a href="https://vietnam-nagoya.work/jp/information/basic/info002.html" class="btn btn-warning">もっと見る</a>
                   </div>
                 </div>
               </div>
