@@ -22,6 +22,7 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./../style.css">
   <script src="./../js/sentence.js"></script>
@@ -29,24 +30,57 @@
   <script>
     const ln = "en"
     const depth = 1;
-    document.title = groupName.jp + ' | ' + document.title ;
+    document.title = groupName.jp + ' | ' + document.title;
   </script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77378955-3"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-77378955-3');
   </script>
+  <style>
+    /* donate専用 */
+    .donateTitle {
+      text-align: right;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      width: 100%;
+      height: 3.2rem;
 
+    }
+
+    .donateContainer {
+      vertical-align: middle;
+      font-family: 'Sawarabi Mincho', sans-serif;
+    }
+
+    .carousel-caption {
+      top: 0px;
+      right: 10%;
+      left: 20%;
+    }
+
+    .donateheader {
+      color: #222222;
+      font-family: 'Sawarabi Mincho', sans-serif;
+    }
+  </style>
 </head>
 
 <body>
   <header>
     <script>
-      insertHeader(ln,depth);
+      insertHeader(ln, depth);
     </script>
   </header>
   <main>
@@ -66,8 +100,14 @@
         <div class="carousel-item active">
           <img src="./../images/index/header-1.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption">
-            <h5>Vietnam Exchange Party</h5>
-            <p></p>
+            <!-- 特設 -->
+            <div class="donateContainer">
+              <div class="donateTitle">
+                <h3 class="donateheader">What we can do now</h3>
+                <a class="btn btn-dark" href="https://vietnam-nagoya.work/jp/information/campaign/index.html" role="button">Learn more(JP)</a>
+              </div>
+            </div>
+            <!-- 特設ここまで -->
           </div>
         </div>
         <div class="carousel-item">
@@ -126,7 +166,7 @@
 
           </div>
           <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-            <div class="card">
+            <!-- <div class="card">
               <img src="./../images/index/6673ff.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Info sample 01</h5>
@@ -134,8 +174,8 @@
                 <p class="card-text">Information sample dispriction here. Infoemation sample dispriction here.</p>
                 <a href="#" class="btn btn-primary">Learn more</a>
               </div>
-            </div>
-            <div class="card">
+            </div> -->
+            <!-- <div class="card">
               <img src="./../images/index/6673ff.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Info sample 02</h5>
@@ -143,7 +183,8 @@
                 <p class="card-text">Information sample dispriction here. Infoemation sample dispriction here.</p>
                 <a href="#" class="btn btn-primary">Learn more</a>
               </div>
-            </div>
+            </div> -->
+            no infomation
           </div>
         </div>
 
@@ -160,7 +201,7 @@
   </main>
   <footer>
     <script>
-      insertFooter(ln,depth);
+      insertFooter(ln, depth);
     </script>
   </footer>
 </body>
