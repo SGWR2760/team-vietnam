@@ -25,7 +25,7 @@ const usefulInfo = {
 const aboutus = {
   jp: '<a class="headerLink" href="' + url + '/jp/aboutus/aboutus.html">チーム概要</a>',
   vn: 'vn???????',
-  en: 'About us'
+  en: '<a class="headerLink" href="' + url + '/en/aboutus/aboutus.html">About us</a>'
 }
 const donate = {
   jp: '<a class="headerLink" href="' + url + '/jp/donate/donate.html">寄付</a>',
