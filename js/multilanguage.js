@@ -94,13 +94,30 @@ function insertReccomentdation(type, depth) {
   document.write(html);
 }
 
-
-
-
 function buildPath(depth) {
   var tmp = "";
   for (i = 0; i < depth; i++) {
     tmp += "../";
   }
   return tmp;
+}
+
+window.onload = function() {
+  const spinner = document.getElementById('loading');
+  spinner.classList.add('loaded');
+  // spinner.remove();
+}
+
+function insertLoading(){
+  var html = "";
+  html += '<div id="loading">';
+  html += '  <div class="spinner">';
+  html += '    <div class="dot1"></div>';
+  html += '    <div class="dot2"></div>';
+  html += '  </div>';
+  html += '  <div class="loadingText">';
+  html += '    <script> ins(groupName.jp) </script>';
+  html += '  </div>';
+  html += '</div>';
+  document.write(html);
 }
