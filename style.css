@@ -1,6 +1,7 @@
 body {
   font-family: 'Kosugi Maru', sans-serif;
 }
+
 strong {
   background: linear-gradient(transparent 60%, #ffff66 60%);
 }
@@ -11,7 +12,6 @@ strong {
   height: 100vh;
   transition: all 1s;
   background-color: #ffd761;
-
   /* 以下のコードを追加 */
   position: fixed;
   top: 0;
@@ -29,7 +29,6 @@ strong {
   -ms-transform: translateX(-50%);
   color: white;
   font-size: 1.5rem;
-
 }
 
 .spinner {
@@ -38,7 +37,6 @@ strong {
   height: 40px;
   position: relative;
   text-align: center;
-
   -webkit-animation: sk-rotate 1.5s infinite linear;
   animation: sk-rotate 1.5s infinite linear;
 }
@@ -52,7 +50,6 @@ strong {
   top: 0;
   background-color: #fff;
   border-radius: 100%;
-
   -webkit-animation: sk-bounce 1.5s infinite ease-in-out;
   animation: sk-bounce 1.5s infinite ease-in-out;
 }
@@ -107,23 +104,34 @@ strong {
   opacity: 0;
   visibility: hidden;
 }
-/* loading */
 
+/* loading */
 .card-title.info {
   margin-top: 32px;
 }
 
 .bg-primary {
-  background-color: #E3B505 !important;
+  background-color: #ffd32d !important;
 }
 
 .coursel1-btn {
   color: white
 }
 
-/* トップページのトグルボタンの色 TODO:外への影響を調べる */
+.nav-link{
+  color: #222222;
+}
+
+#navbarSupportedContent>ul>li:nth-child(7)>a {
+  color: black;
+}
+
+#navbarSupportedContent>ul>li>a {
+  color: #444444;
+}
+
 .nav-item a {
-  color: gray;
+  color: #444444;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
@@ -158,9 +166,7 @@ strong {
   padding-bottom: 2px;
 }
 
-
-
-.image-center{
+.image-center {
   text-align: center;
 }
 

@@ -1,6 +1,6 @@
 const pagepath = "https://vietnam-nagoya.work"
 
-function insertHeader(type, depth) {
+function insertHeader2(type, depth) {
   var completePath = buildPath(depth);
   var html = "";
   html += '<div class="pos-f-t">';
@@ -28,13 +28,13 @@ function insertHeader(type, depth) {
   html += '      <li class="list-group-item bg-primary"><script>ins(aboutus.' + type + ');</script></li>';
   html += '      <li class="list-group-item bg-primary"><script>ins(contactus.' + type + ');</script></li>';
   if (type != "jp") {
-    html += '      <li class="list-group-item bg-primary"><img src="./' + completePath + 'images/index/language.svg"></img><script>ins(pageShowJp.' + type + ');</script></li>';
+    html += '      <li class="list-group-item bg-primary"><script>ins(pageShowJp.' + type + ');</script></li>';
   }
   if (type != "en") {
-    html += '      <li class="list-group-item bg-primary"><img src="./' + completePath + 'images/index/language.svg"></img><script>ins(pageShowEn.' + type + ');</script></li>';
+    html += '      <li class="list-group-item bg-primary"></img><script>ins(pageShowEn.' + type + ');</script></li>';
   }
   if (type != "vn") {
-    html += '      <li class="list-group-item bg-primary"><img src="./' + completePath + 'images/index/language.svg"></img><script>ins(pageShowVn.' + type + ');</script></li>';
+    html += '      <li class="list-group-item bg-primary"></img><script>ins(pageShowVn.' + type + ');</script></li>';
   }
   html += '    </ul>';
   html += '  </div>';
@@ -49,11 +49,11 @@ function insertFooter(type, depth) {
   html += '  <div class="jumbotron">';
   html += '    <ul class="list-group">';
   // 　日本語のページを表示
-  html += '      <li class="list-group-item"><img src="./' + completePath + 'images/index/language.svg"></img><script>ins(pageShowJp.' + type + ');</script></li>';
+  html += '      <li class="list-group-item"><script>ins(pageShowJp.' + type + ')</script></li>';
   //  英語のページを表示
-  html += '      <li class="list-group-item"><img src="./' + completePath + 'images/index/language.svg"></img><script>ins(pageShowEn.' + type + ');</script></li>';
+  html += '      <li class="list-group-item"><script>ins(pageShowEn.' + type + ')</script></li>';
   //  ベトナム語のページを表示
-  html += '      <li class="list-group-item"><img src="./' + completePath + 'images/index/language.svg"></img><script>ins(pageShowVn.' + type + ');</script></li>';
+  html += '      <li class="list-group-item"><script>ins(pageShowVn.' + type + ')</script></li>';
   html += '    </ul>';
   html += '    <ul class="list-group">';
   html += '      <li class="list-group-item aboutus"><script>ins(aboutus.' + type + ');</script></li>';
@@ -85,10 +85,10 @@ function insertReccomentdation(type, depth) {
   var html = "";
   html += ' <div class="listContent">';
   html += '   <ul class="list-group">';
-  html += '     <li class="list-group-item"><img src="./' + completePath + 'images/events/allevents.svg"> <script>ins(allEventsInfo.' + type + ');</script></li>';
+  html += '     <li class="list-group-item"><script>ins(allEventsInfo.' + type + ');</script></li>';
   // html += '     <li class="list-group-item"><img src="./' + completePath + 'images/pastevents.svg"> <script>ins(allPastEvents.' + type + ');</script></li>';
 
-  html += '     <li class="list-group-item"><img src="./' + completePath + 'images/info/alltopicks.svg"> <script>ins(allUsefulInfo.' + type + ');</script></li>';
+  html += '     <li class="list-group-item"><script>ins(allUsefulInfo.' + type + ');</script></li>';
   html += '   </ul>';
   html += ' </div>';
   document.write(html);
@@ -108,7 +108,7 @@ window.onload = function() {
   // spinner.remove();
 }
 
-function insertLoading(){
+function insertLoading() {
   var html = "";
   html += '<div id="loading">';
   html += '  <div class="spinner">';
@@ -120,4 +120,42 @@ function insertLoading(){
   html += '  </div>';
   html += '</div>';
   document.write(html);
+}
+
+function insertHeader(type, depth) {
+  var html = "";
+  html += '<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">';
+  html += '<nav class="navbar navbar-expand-lg navbar-dark bg-primary">';
+  html += '  <a class="navbar-brand" href="#"><script>ins(groupName.jp)</script></a>';
+  html += '  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">';
+  html += '    <i class="fas fa-chevron-circle-down"></i>';
+  html += '  </button>';
+  html += '  <div class="collapse navbar-collapse" id="navbarSupportedContent">';
+  html += '    <ul class="navbar-nav mr-auto ml-2">';
+  html += '      <li class="nav-item active">';
+  html += '        <script>ins(topPage.' + type + ')</script>';
+  html += '      </li>';
+  html += '      <li class="nav-item active">';
+  html += '        <script>ins(allEventsInfo.' + type + ')</script>';
+  html += '      </li>';
+  html += '      <li class="nav-item active">';
+  html += '        <script>ins(allUsefulInfo.' + type + ')</script>';
+  html += '      </li>';
+  html += '      <li class="nav-item active">';
+  html += '        <script>ins(aboutus.' + type + ')</script>';
+  html += '      </li>';
+  html += '      <li class="nav-item active">';
+  html += '        <script>ins(pageShowEn.' + type + ')</script>';
+  html += '      </li>';
+  html += '      <li class="nav-item active">';
+  html += '        <script>ins(pageShowVn.' + type + ')</script>';
+  html += '      </li>';
+  html += '      <li class="nav-item active">';
+  html += '        <script>ins(contactus.' + type + ')</script>';
+  html += '      </li>';
+  html += '    </ul>';
+  html += '  </div>';
+  html += '</nav>';
+  document.write(html);
+
 }
