@@ -144,12 +144,15 @@ function insertHeader(type, depth) {
   html += '      <li class="nav-item active">';
   html += '        <script>ins(aboutus.' + type + ')</script>';
   html += '      </li>';
-  html += '      <li class="nav-item active">';
-  html += '        <script>ins(pageShowEn.' + type + ')</script>';
-  html += '      </li>';
-  html += '      <li class="nav-item active">';
-  html += '        <script>ins(pageShowVn.' + type + ')</script>';
-  html += '      </li>';
+  if (type != "jp") {
+    html += '      <li class="nav-item active"><script>ins(pageShowJp.' + type + ');</script></li>';
+  }
+  if (type != "en") {
+    html += '      <li class="nav-item active"></img><script>ins(pageShowEn.' + type + ');</script></li>';
+  }
+  if (type != "vn") {
+    html += '      <li class="nav-item active"></img><script>ins(pageShowVn.' + type + ');</script></li>';
+  }
   html += '      <li class="nav-item active">';
   html += '        <script>ins(contactus.' + type + ')</script>';
   html += '      </li>';
