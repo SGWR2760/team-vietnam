@@ -29,6 +29,7 @@
   <script>
     const ln = "jp";
     const depth = 3;
+    var breadlistCurrentpage = document.title;
     document.title = groupName.jp + ' | ' + document.title;
   </script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -113,7 +114,13 @@
       headerAlert()
     </script>
 
-
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="./../../../index.html">トップ</a></li>
+        <li class="breadcrumb-item"><a href="./../index.html">お役立ち情報</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><script>ins(breadlistCurrentpage)</script></li>
+      </ol>
+    </nav>
 
     <div class="mainContent container">
       <div class="card m-2">

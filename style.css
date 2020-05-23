@@ -139,6 +139,14 @@ strong {
   background: #E3B505;
 }
 
+.breadcrumb{
+  background-color:transparent;
+}
+.breadcrumb a{
+  color:#d49f00;
+}
+
+
 .headerLink {
   color: #212529;
 }
