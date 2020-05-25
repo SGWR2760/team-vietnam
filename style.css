@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;900&display=swap');
 body {
-  font-family: 'Kosugi Maru', sans-serif;
+  /* font-family: 'Kosugi Maru', sans-serif; */
+  font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 strong {
@@ -183,12 +185,12 @@ strong {
   background-color: #ffefc0;
 }
 
-.informationTitle {
+/* .informationTitle {
   font-size: 1.5rem;
   padding: 8px;
   text-align: center;
   font-family: 'Kosugi Maru', sans-serif;
-}
+} */
 
 .informationTab {
   text-align: center;
@@ -256,4 +258,23 @@ strong {
 
 .newInfoSection{
   /* background-color: gray; */
+}
+.titleCaption{
+
+}
+.titleSection{
+  text-align: center;
+}
+.conceptTitle{
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+
+.conceptNumber{
+  font-size: 1.4rem;
+}
+.conceptSubtitle{
+  font-size: 1.4rem;
+
 }

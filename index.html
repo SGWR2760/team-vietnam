@@ -22,7 +22,6 @@
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
@@ -146,16 +145,20 @@
 
     <section class="newInfoSection">
       <div class="newInformation m-sm-5 m-3 mt-5">
-        <h1 class="conceptTitle informationTitle">
-          お知らせ
-        </h1>
+
+        <div class="titleSection">
+          <span class="titleCaption">New Information</span>
+          <h1 class="conceptTitle">
+            お知らせ
+          </h1>
+        </div>
 
         <table class="table table-borderless">
           <tbody>
             <tr>
               <td>5.24</td>
               <td>
-                運営メンバーの田中さんが実際にベトナムに留学した経験を記事にしました。詳しくは<a href="#">こちら</a>
+                運営メンバーの田中さんが実際にベトナムに留学した経験を記事にしました。詳しくは<a href="https://vietnam-nagoya.work/jp/information/experience/20200524.html">こちら</a>
               </td>
             </tr>
           </tbody>
@@ -164,18 +167,25 @@
       </div>
     </section>
 
+    <div class="spaceer mt-5 mb-5"></div>
+
     <div class="mainContent">
       <!-- コンセプト -->
       <div class="ourConcept container">
-        <h1 class="conceptTitle informationTitle">
-          コンセプト
-        </h1>
+        <div class="titleSection">
+          <span class="titleCaption">Concept</span>
+          <h1 class="conceptTitle">
+            コンセプト
+          </h1>
+
+        </div>
+
         <div class="row">
           <div class="col-sm-4">
             <div class="image-center mt-3">
               <img src="./images/aboutus/index-image1.jpg" alt="" class="img-fluid rounded" alt="Responsive image">
             </div>
-            <div class="conceptMessage m-3">
+            <div class="conceptMessage mt-3">
               <span class="border-top border-dark" style="display:inline-block">
                 <h2 class="conceptNumber">01</h2>
               </span>
@@ -192,7 +202,7 @@
             <div class="image-center mt-3">
               <img src="./images/aboutus/index-image2.jpg" alt="" class="img-fluid rounded" alt="Responsive image">
             </div>
-            <div class="conceptMessage m-3">
+            <div class="conceptMessage mt-3">
               <span class="border-top border-dark" style="display:inline-block">
                 <h2 class="conceptNumber">02</h2>
               </span>
@@ -212,7 +222,7 @@
             <div class="image-center mt-3">
               <img src="./images/aboutus/index-image3.jpg" alt="" class="img-fluid rounded" alt="Responsive image">
             </div>
-            <div class="conceptMessage m-3">
+            <div class="conceptMessage mt-3">
               <span class="border-top border-dark" style="display:inline-block">
                 <h2 class="conceptNumber">03</h2>
               </span>
@@ -238,11 +248,18 @@
     </div>
 
     <div class="information">
-      <h1 class="informationTitle">
-        <script>
-          ins(informationTitle.jp);
-        </script>
-      </h1>
+      <div class="titleSection">
+        <span class="titleCaption">
+          <script>
+            ins(informationTitle.en);
+          </script>
+        </span>
+        <h1 class="conceptTitle">
+          <script>
+            ins(informationTitle.jp);
+          </script>
+        </h1>
+      </div>
 
       <ul class="nav nav-pills mb-3 justify-content-center " id="pills-tab" role="tablist">
         <li class="nav-item infoNav">
