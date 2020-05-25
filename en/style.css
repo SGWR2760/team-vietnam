@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+body {
+  font-family: 'Balsamiq Sans', cursive;
+}
+
+h2 {
+  font-family: 'Rock Salt', cursive;
+}
+
+/* headerSection */
+.sectionTitle {
+  text-align: center;
+  margin-top: 8rem;
+}
+
+/* noticeSection */
+.noticeTable {
+  text-align: center;
+}
+
+.table {
+  width: 100%;
+}
+
+/* out concept section */
+.ourConceptContent {
+  text-align: center;
+}
+
+.ourConceptText {}
+
+@media screen and (max-width: 990px) {
+  .headerImage {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+  }
+
+  .fas {
+    font-size: 2rem;
+  }
+
+  .sectionTitle {
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .headerImage {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+  }
+
+  .fas {
+    font-size: 4rem;
+  }
+
+  .sectionTitle {
+    margin-top: 8rem;
+  }
+}
+
+.footerBackground {
+  width: 100%;
+  height:8rem;
+  background-color: #BBBBBB;
+}
+
+li {
+  display: inline;
+}
+
+li a{
+  color:#222222;
+}
