@@ -257,7 +257,8 @@ strong {
   }
 
 .newInfoSection{
-  /* background-color: gray; */
+  background-color: #ffefc0;
+  padding: 1rem 0rem;
 }
 .titleCaption{
 
@@ -276,5 +277,8 @@ strong {
 }
 .conceptSubtitle{
   font-size: 1.4rem;
+}
 
+.detailButton{
+  text-align: center;
 }
