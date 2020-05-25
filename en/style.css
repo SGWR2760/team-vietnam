@@ -38,11 +38,22 @@ h2 {
   align-items: center;
 }
 
+.arrawIcon {
+  padding-top: 1rem;
+  text-align: center;
+  color: #AAAAAA;
+}
+
+.fa-angle-double-down {
+  color: #AAAAAA;
+}
+
 /* noticeSection */
-.noticeSection{
+.noticeSection {
   background-color: #CCCCCC;
   padding-bottom: 1rem;
 }
+
 .noticeTable {
   text-align: center;
 }
@@ -51,7 +62,32 @@ h2 {
   width: 100%;
 }
 
+/* poem section */
+.poemTitle {
+  margin-top: 8rem;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.poemArea {
+  /* padding-left: 10%; */
+}
+
+.poemText {
+  text-align: center;
+  line-height: 3rem;
+  margin-bottom: 8rem;
+
+}
+
 /* out concept section */
+.ourConceptSection {
+  margin-top: 4rem;
+  padding-bottom: 8rem;
+
+  background-color: #CCCCCC;
+}
+
 .ourConceptContent {
   text-align: center;
 }
@@ -82,7 +118,7 @@ h2 {
   }
 
   .fas {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .sectionTitle {
