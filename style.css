@@ -245,7 +245,7 @@ strong {
 .copyright {
   text-align: center;
   padding-top: 8px;
-
+}
   @media screen and (max-width: 480px) {}
 
   @media screen and (min-width: 481px) {
@@ -253,3 +253,7 @@ strong {
       /* width: 45%; */
     }
   }
+
+.newInfoSection{
+  /* background-color: gray; */
+}
