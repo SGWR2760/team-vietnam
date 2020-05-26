@@ -27,9 +27,6 @@
   </script>
   <link rel="stylesheet" href="assets/css/style.css">
 
-  <!-- Facebookの投稿を挿入する際に使用 -->
-  <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v6.0"></script>
 
   <link rel="stylesheet" href="./../style.css">
   <link rel="stylesheet" href="./../../style.css">
@@ -82,6 +79,10 @@
     .concept-contents {
       margin: 12px 0px;
     }
+
+    .teamConceptSentence p {
+      text-align: center;
+    }
   </style>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77378955-3"></script>
@@ -119,13 +120,18 @@
           <h1 class="card-title">About us</h1>
           <h2 class="card-title">Concept</h2>
 
-          <p class="card-text">We hold events for Vietnamese and Japanese.</p>
-          <p class="card-text">
-            ① <span id="discover">"discover"</span> the culture,<br>
-            ② <span id="share">"Share"</span> the connection,<br>
-            ③ <span id="memory">"Remember"</span> memories<br>
+          <div class="teamConceptSentence">
+            <p class="card-text">We hold events for Vietnamese and Japanese.</p>
+            <div class="teamMission">
 
-          </p>
+
+            <p class="card-text">
+              ① <span id="discover">"discover"</span> the culture,<br>
+              ② <span id="share">"Share"</span> the connection,<br>
+              ③ <span id="memory">"Remember"</span> memories<br>
+            </p>
+            </div>
+          </div>
 
           <h2 class="card-title">Group overview</h2>
           <table class="table">
