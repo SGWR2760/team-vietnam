@@ -21,6 +21,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="./../style.css">
   <link rel="stylesheet" href="./../../style.css">
   <script src="./../../js/sentence.js"></script>
   <script src="./../../js/multilanguage.js"></script>
@@ -31,7 +32,12 @@
   </script>
 
   <style>
+    h1 {
+      text-align: center;
+    }
+
     h2 {
+      text-align: center;
       padding: 48px 0px 12px 0px;
       /* text-align: center; */
     }
@@ -39,6 +45,21 @@
     a {
       text-decoration: none;
     }
+
+    .donateDispriction {
+      text-align: center;
+    }
+
+    .donateDispriction p {
+      display: inline-block;
+      text-align: left;
+    }
+
+    .donateDispriction ul{
+      display: inline-block;
+      text-align: left;
+    }
+
   </style>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77378955-3"></script>
@@ -57,9 +78,9 @@
 
 <body>
   <header>
-    <script>
+    <!-- <script>
       insertHeader(ln, depth);
-    </script>
+    </script> -->
   </header>
   <main>
 
@@ -68,45 +89,44 @@
     </script>
 
     <div class="mainContent">
-      <div class="card m-1">
-        <img src="./../../images/donate/header.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h1 class="card-title">Donate</h1>
           <h2 class="card-title">Use of donation</h2>
-          <p class="card-text">
-            Donations will be used to fund the following projects.</p>
-          <ul>
-            <li>
-              Vietnam exchange meeting cost.
-            </li>
-            <li>
-              Public relations business for Vietnam exchange party and group activity continuation.
-            </li>
-          </ul>
+          <div class="donateDispriction">
+            <p class="card-text">
+              Donations will be used to fund the following projects.</p>
+            <ul>
+              <li>
+                Vietnam exchange meeting cost.
+              </li>
+              <li>
+                Public relations business for Vietnam exchange party and group activity continuation.
+              </li>
+            </ul>
+          </div>
 
           <h2 class="card-title">Donation method</h2>
-
-          <p class="card-text">
-            Please tap the link below and pay from Paypay.<br>
-            <a href="https://qr.paypay.ne.jp/IPOLvisAeZfFxb4J" target="_blank">
-              https://qr.paypay.ne.jp/IPOLvisAeZfFxb4J</a>
-          </p>
-
+          <div class="donateDispriction">
+            <p class="card-text">
+              Please tap the link below and pay from Paypay.<br>
+              <a href="https://qr.paypay.ne.jp/IPOLvisAeZfFxb4J" target="_blank">
+                https://qr.paypay.ne.jp/IPOLvisAeZfFxb4J</a>
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+
     <div class="otherContent">
-      <script>
+      <!-- <script>
         insertReccomentdation(ln, depth);
-      </script>
+      </script> -->
     </div>
     </div>
   </main>
   <footer>
     <script>
-      insertFooter(ln, depth);
+      insertEnglishFooter();
     </script>
   </footer>
 </body>
-
 </html>
