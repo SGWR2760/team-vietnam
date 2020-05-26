@@ -20,6 +20,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="./../style.css">
   <link rel="stylesheet" href="./../../style.css">
   <script src="./../../js/sentence.js"></script>
   <script src="./../../js/multilanguage.js"></script>
@@ -30,9 +31,16 @@
   </script>
 
   <style>
+    body {
+      text-align: center;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
     h2 {
       padding: 48px 0px 12px 0px;
-      /* text-align: center; */
     }
 
     a {
@@ -56,9 +64,9 @@
 
 <body>
   <header>
-    <script>
+    <!-- <script>
       insertHeader(ln, depth);
-    </script>
+    </script> -->
   </header>
   <main>
 
@@ -67,27 +75,26 @@
     </script>
 
     <div class="mainContent">
-      <div class="card m-1">
-        <!-- <img src="./../../images/contactus/header.jpg" class="card-img-top" alt="..."> -->
-        <div class="card-body">
-          <h1 class="card-title">Contact us</h1>
-          <p class="card-text">
-            Please fill out the form below.</p>
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf2GuANIIEi-8WGo8l77x-oZV2NtLuXwOtPtctLtgZ_tb-tzA/viewform?embedded=true" height="1100" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
 
-        </div>
+      <!-- <img src="./../../images/contactus/header.jpg" class="card-img-top" alt="..."> -->
+      <div class="card-body">
+        <h1 class="card-title">Contact us</h1>
+        <p class="card-text">
+          Please fill out the form below.</p>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf2GuANIIEi-8WGo8l77x-oZV2NtLuXwOtPtctLtgZ_tb-tzA/viewform?embedded=true" width="100%" height="1100" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
       </div>
+
     </div>
     <div class="otherContent">
-      <script>
+      <!-- <script>
         insertReccomentdation(ln, depth);
-      </script>
+      </script> -->
     </div>
     </div>
   </main>
   <footer>
     <script>
-      insertFooter(ln, depth);
+      insertEnglishFooter();
     </script>
   </footer>
 </body>
