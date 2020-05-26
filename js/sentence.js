@@ -3,7 +3,7 @@ const url = "https://vietnam-nagoya.work"
 const groupName = {
   jp: 'ベトナム交流会',
   vn: 'Đảng trao đổi việt nam',
-  en: 'Vietnam Exchange Party'
+  en: 'Meet and greet Vietnam in Naoya'
 }
 
 const informationTitle = {
