@@ -132,10 +132,10 @@ h2 {
   background-color: #BBBBBB;
 }
 
-li {
+.footerlist {
   display: inline;
 }
 
-li a {
+.footerlist a {
   color: #222222;
 }

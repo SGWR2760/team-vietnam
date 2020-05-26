@@ -168,9 +168,9 @@ function insertEnglishFooter() {
 
   html += '<div class="footerBackground p-5">';
   html += '  <ul>';
-  html += '    <li class="pr-4"><a href="https://vietnam-nagoya.work/en/aboutus/aboutus.html">About us</a></li>';
-  html += '    <li class="pr-4"><a href="https://vietnam-nagoya.work/en/contactus/contactus.html">Contact us</a></li>';
-  html += '    <li class="pr-4"><a href="https://vietnam-nagoya.work/">Japanese page</a></li>';
+  html += '    <li class="footerlist pr-4"><a href="https://vietnam-nagoya.work/en/aboutus/aboutus.html">About us</a></li>';
+  html += '    <li class="footerlist pr-4"><a href="https://vietnam-nagoya.work/en/contactus/contactus.html">Contact us</a></li>';
+  html += '    <li class="footerlist pr-4"><a href="https://vietnam-nagoya.work/">Japanese page</a></li>';
   html += '  </ul>';
   html += '</div>';
 
