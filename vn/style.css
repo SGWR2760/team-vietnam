@@ -152,6 +152,7 @@ h2 {
     position: relative;
     top: -178;
     margin-bottom: -178;
+    width: 100%;
     /*相殺*/
   }
 
