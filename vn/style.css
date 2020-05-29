@@ -151,8 +151,7 @@ h2 {
     margin: 16px;
     position: relative;
     top: -178;
-    margin-bottom: -178;
-    /* width: 100%; */
+    margin-bottom: -150;    /* width: 100%; */
     /*相殺*/
   }
 
