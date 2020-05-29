@@ -1,0 +1,238 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Major+Mono+Display&display=swap');
+
+:root {
+  --main-bg-color: #f4eeff;
+  --sub-bg-color: #dcd6f7;
+  --main-accent-color: #424874;
+  --sub-sccent-color: #a6b1e1;
+}
+
+/* font-family: 'Barlow Condensed', sans-serif; */
+/* font-family: 'Major Mono Display', monospace; */
+body {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+h1 {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+h2 {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+/* headerSection */
+.sectionTitle {
+  text-align: center;
+  margin-top: 8rem;
+  position: relative;
+}
+
+.headerImage {
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  height: 400px;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 16px;
+}
+
+.arrawIcon {
+  padding-top: 1rem;
+  text-align: center;
+  color: #AAAAAA;
+}
+
+/* menu section */
+.menu{
+  position: sticky;
+  top:0;
+  z-index: 999;
+}
+.menuBg{
+  background-color: var(--sub-bg-color);
+  text-align: center;
+}
+
+
+
+/* noticeSection */
+.noticeSection {
+  padding-bottom: 1rem;
+  background-color: var(--sub-bg-color);
+}
+
+.noticeTable {
+  text-align: center;
+}
+
+.table {
+  width: 100%;
+}
+
+/* poem section */
+.poemTitle {
+  margin-top: 8rem;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.poemArea {
+  /* padding-left: 10%; */
+}
+
+.poemText {
+  text-align: center;
+  line-height: 3rem;
+  margin-bottom: 8rem;
+}
+
+/* out concept section */
+.ourConceptSection {
+  margin-top: 4rem;
+  padding-bottom: 8rem;
+  background-color: var(--sub-bg-color);
+}
+
+.ourConceptContent {
+  text-align: center;
+}
+
+.ourConceptText {}
+
+/* スマホ・タブレット */
+@media screen and (max-width: 990px) {
+  .headerSection {
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .headerImage {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .header-bg {
+    /* position: absolute; */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-image: url(./../images/index/header-3.jpg);
+    background-size: cover;
+    background-position: right;
+    height: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  .headerMessage {
+    vertical-align: middle;
+    background-color: var(--main-accent-color);
+    color: white;
+    padding: 16px;
+    margin: 16px;
+    position: relative;
+    top: -178;
+    margin-bottom: -178;/*相殺*/
+  }
+
+  .arrawIcon {
+    position: relative;
+    top: -180;
+    color: #FFF;
+
+  }
+  .fa-angle-double-down {
+    color: #FFF;
+  }
+
+  .fas {
+    font-size: 2rem;
+  }
+
+  .sectionTitle {
+    margin-top: 4rem;
+  }
+}
+
+/* PC版 */
+@media screen and (min-width: 991px) {
+  .headerSection {
+    position: relative;
+    margin: 0 auto;
+    /* background-color: #848202; */
+  }
+
+  .headerImage {
+    width: 100%;
+    /* height: 75%; */
+    object-fit: cover;
+  }
+
+  .header-bg {
+    /* position: absolute; */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-image: url(./../images/index/header-3.jpg);
+    /* background-size: cover; */
+    background-position: right;
+    height: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  .headerMessage {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: var(--main-accent-color);
+    color: white;
+    /* height: 40%; */
+    padding: 16px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit- transform: translateY(-50%) translateX(-50%);
+  }
+  .fa-angle-double-down {
+    color: #AAAAAA;
+  }
+
+  .arrawIcon {
+    position: relative;
+    top: -120;
+    color: #999;
+
+  }
+
+  .fas {
+    font-size: 3rem;
+  }
+
+  .sectionTitle {
+    margin-top: 8rem;
+  }
+}
+
+.footerBackground {
+  width: 100%;
+  height: 8rem;
+  background-color: var(--main-bg-color);
+}
+
+.footerlist {
+  display: inline;
+}
+
+.footerlist a {
+  color: #222222;
+}
