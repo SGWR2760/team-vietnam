@@ -56,6 +56,58 @@ strong {
   width: 100%;
 }
 
+/* blog information section */
+.blog {
+  color: #212529;
+  outline: none;
+}
+
+a:hover{
+  text-decoration: none;
+  color:var(--sub-accent-color);
+
+}
+
+.blog:active {
+  text-decoration: none;
+  color:var(--main-accent-color);
+}
+
+.blogType {
+  background-color: var(--main-accent-color);
+  color: white;
+  height: 3rem;
+  width: 3rem;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  display: -webkit-flex;
+  align-items: center;
+  border-radius: 0.2rem 0px 0px 0px / 0.2rem 0px 0px 0px;
+  position: absolute;
+  top: 3rem;
+}
+
+.blogPostDate {
+  font-size: 1rem;
+}
+
+.blogPostTitle {
+  font-size: 1.25rem;
+}
+
+.learnMoreBtn{
+  text-align:center;
+  margin-top: 3rem;
+}
+
+/* お役立ち情報 */
+.topics{
+  background-color: var(--sub-bg-color);
+  padding-bottom: 3rem;
+}
+
+
 /* スマホ・タブレット */
 @media screen and (max-width: 990px) {
   .headerSection {
@@ -193,22 +245,22 @@ strong {
   color: #222222;
 }
 
-#navbarSupportedContent>ul>li:nth-child(7)>a {
+/* #navbarSupportedContent>ul>li:nth-child(7)>a {
   color: black;
 }
 
 #navbarSupportedContent>ul>li>a {
   color: #444444;
-}
+} */
 
-.nav-item a {
+/* .nav-item a {
   color: #444444;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
   color: white;
   background: #E3B505;
-}
+} */
 
 .breadcrumb {
   background-color: transparent;
@@ -226,7 +278,7 @@ strong {
   margin: 16px;
 }
 
-#pills-tab {
+/* #pills-tab {
   padding: 36px 0px;
 }
 
@@ -238,7 +290,7 @@ strong {
 #pills-profile-tab {
   font-size: 1rem;
   display: initial;
-}
+} */
 
 .bi-exclamation-triangle-fill {
   margin-right: 8px;
@@ -249,10 +301,10 @@ strong {
   text-align: center;
 }
 
-.information {
+/* .information {
   padding: 36px 0px;
   background-color: #ffefc0;
-}
+} */
 
 /* .informationTitle {
   font-size: 1.5rem;
@@ -260,14 +312,14 @@ strong {
   text-align: center;
   font-family: 'Kosugi Maru', sans-serif;
 } */
-.informationTab {
+/* .informationTab {
   text-align: center;
   padding-left: unset;
 }
 
 .otherContent {
   padding-top: 36px;
-}
+} */
 
 .listcontentItem {
   display: flex;
@@ -283,19 +335,13 @@ strong {
   margin: 16px;
 }
 
-.eventInfo {
+/* .eventInfo {
   margin: 8px;
-}
+} */
 
-.row {
-  /* text-align: center; */
-  /* padding: 8px; */
-}
 
-.card {
-  /* margin: 8px 8px; */
-}
 
+/* 田中さんの記事 */
 .media {
   margin: 8px 4px;
 }
@@ -326,13 +372,6 @@ strong {
   }
 }
 
-/* .newInfoSection{
-  background-color: #ffefc0;
-  padding: 1rem 0rem; */
-/* } */
-/* .titleCaption{
-
-} */
 .titleSection {
   text-align: center;
 }
@@ -485,8 +524,8 @@ nav .inner ul li a:hover {
 .toggle_btn {
   display: block;
   position: fixed;
-  top: 30px;
-  left: 30px;
+  top: 16px;
+  left: 16px;
   width: 30px;
   height: 30px;
   transition: all .5s;

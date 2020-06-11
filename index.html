@@ -53,7 +53,7 @@
 </head>
 
 
-<body >
+<body>
 
   <!-- ローディング画面 -->
   <script>
@@ -69,9 +69,19 @@
       <nav>
         <div class="inner">
           <ul>
-            <li><a href="#">Text</a></li>
-            <li><a href="#">Text</a></li>
-            <li><a href="#">Text</a></li>
+            <li><a href="#">トップ</a></li>
+            <li><a href="#">チーム概要</a></li>
+            <li><a href="#">イベント情報</a></li>
+            <li><a href="#">お役立ち情報</a></li>
+            <li><a href="#">寄付</a></li>
+            <li><a href="#">免責事項</a></li>
+
+          </ul>
+
+          <p class="mt-5">Global Menu</p>
+          <ul>
+            <li><a href="#">英語のページを表示<br>English page</a></li>
+            <li><a href="#">ベトナム語のページを表示<br>Trang tiếng việt</a></li>
           </ul>
         </div>
       </nav>
@@ -93,26 +103,25 @@
         </div>
       </div>
       <div class="arrawIcon">
-        <p>cuộn xuống</p>
+        <p>Scroll Down</p>
         <i class="fas fa-angle-double-down faa-vertical animated"></i>
       </div>
       <div class="headerMessage rounded shadow">
-        <h1>Gặp gỡ và chào đón Việt Nam tại Nagoya</h1>
+        <h1>
+          Xin chào tất cả mọi người</h1>
         <p>ベトナム交流会は、日本に来ているベトナム人が日本人とのつながり・<br>思い出を作ってもらうために開催しています。</p>
       </div>
 
     </section>
-
-
-
   </header>
+
   <main>
 
     <script>
       headerAlert()
     </script>
 
-    <section class="noticeSection mt-5 leftAnime">
+    <section class="noticeSection leftAnime">
       <div class="sectionTitle">
         <h2>お知らせ</h2>
       </div>
@@ -183,167 +192,180 @@
 
     </section>
 
-
-
-    <div class="information">
-      <div class="titleSection">
-        <span class="titleCaption">
-          <script>
-            ins(informationTitle.en);
-          </script>
-        </span>
-        <h1 class="conceptTitle">
-          <script>
-            ins(informationTitle.jp);
-          </script>
-        </h1>
+    <section class="leftAnime">
+      <div class="sectionTitle">
+        <h2>イベント情報</h2>
       </div>
+      <div class="container">
+        <div class="row">
 
-      <ul class="nav nav-pills mb-3 justify-content-center " id="pills-tab" role="tablist">
-        <li class="nav-item infoNav">
-          <a class="nav-link active rounded-pill" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
-            <script>
-              ins(eventInfo.jp);
-            </script>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link rounded-pill" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
-            <script>
-              ins(usefulInfo.jp);
-            </script>
-          </a>
-        </li>
-      </ul>
-      <div class="tab-content" id="pills-tabContent">
-        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
 
-          <div class="container">
-            <div class="row">
-
-              <div class="col-md-4 mb-2">
-                <div class="card">
-                  <img src="./images/events/event008/header.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h2 class="card-title">０円ピクニック</h2>
-                    <!-- <div class="alert alert-info" role="alert">
-                      このイベントは終了しました。
-                    </div> -->
-                    <p class="card-text">
-                      ベトナムと日本の交流会を開催します🇻🇳🇯🇵
-                      なんと‼️今回で8回目なんです✨👏
-
-                      参加したことある方も！はじめましての方も！
-                      一緒に楽しみましょう😆
-
-                      今回は🍙0円ピクニック🍙
-                      青空の下でみんなでピクニックしましょう〜🌼
-
-                    </p>
-                    <a href="https://vietnam-nagoya.work/jp/events/events008.html" class="btn btn-warning">もっと見る</a>
-                  </div>
+          <div class="col-sm-4">
+            <a href="#" class="blog">
+              <div class="blogContent">
+                <div class="blogType">
+                  Event
+                </div>
+                <div class="blogImage">
+                  <img src="./images/events/event008/header_tn.jpg" class="img-fluid rounded mt-5 lazyload" alt="...">
+                </div>
+                <div class="blogPostDate">
+                  2020/06/08
+                </div>
+                <div class="blogPostTitle">
+                  0円ピクニック🍙
+                </div>
+                <div class="blogDispriction">
+                  なんと‼️今回で8回目なんです✨👏
+                  今回も国際センターで開催します！
                 </div>
               </div>
-
-              <div class="col-md-4">
-                <div class="card mb-2">
-                  <img src="./images/events/event007/header.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h2 class="card-title">寿司で国際交流</h2>
-                    <div class="alert alert-info" role="alert">
-                      このイベントは終了しました。
-                    </div>
-                    <p class="card-text">
-                      2020第一弾企画‼️「手巻き寿司×🇻🇳🇯🇵交流会」こんにちは！今回で交流会も第7回目を迎えました‼️
-                      チーム対抗ゲーム、クイズなどの人気企画はもちろん、手巻き寿司を作って食べましょう〜‼️
-                    </p>
-                    <a href="https://vietnam-nagoya.work/jp/events/events007.html" class="btn btn-warning">もっと見る</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="card mb-2">
-                  <img src="./images/events/event006/header.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h2 class="card-title">第6回ベトナム交流会</h2>
-                    <div class="alert alert-info" role="alert">
-                      このイベントは終了しました。
-                    </div>
-                    <p class="card-text">
-                      第6回国際交流イベントを開催します‼️ 今回は『🐺頭を使ったゲーム➕🎃ハロウィン』を
-                      組み合わせたエンターテイメントをみんなで作ります‼️
-                      楽しみにしていて下さいね。
-                    </p>
-                    <a href="https://vietnam-nagoya.work/jp/events/events006.html" class="btn btn-warning">もっと見る</a>
-                  </div>
-                </div>
-              </div>
-
-
-            </div>
+            </a>
           </div>
 
-        </div>
-        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+          <div class="col-sm-4">
+            <a href="#" class="blog">
+              <div class="blogContent">
+                <div class="blogType">
+                  Info
+                </div>
+                <div class="blogImage">
+                  <img src="./images/events/event007/header_tn.jpg" class="img-fluid rounded mt-5 lazyload" alt="...">
 
-          <div class="container">
-            <div class="row">
-
-              <div class="col-sm-6">
-                <div class="card mb-2">
-                  <img src="./images/campaign/header.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h2 class="card-title">私達に今できること</h2>
-                    <p class="card-text">
-                      新型コロナウイルス感染症に罹患された皆様、及び関係者の皆様に、謹んでお見舞い申し上げます。このページでは新型コロナウイルスに関する寄附情報などを集めています。
-                    </p>
-                    <a class="btn btn-dark" href="https://vietnam-nagoya.work/jp/information/campaign/index.html" role="button">もっと詳しく</a>
-                  </div>
+                </div>
+                <div class="blogPostDate">
+                  2020/02/23
+                </div>
+                <div class="blogPostTitle">
+                  寿司で国際交流
+                </div>
+                <div class="blogDispriction">
+                  手巻き寿司をみんなで食べました。納豆は好き嫌いが分かれるのかな？
                 </div>
               </div>
-              <div class="col-sm-6">
-                <div class="card mt-2">
-                  <div class="card-body">
-                    <h5 class="card-title">ベトナムで暮らす～私の留学体験記</h5>
-                    <p class="card-text">
-                      大学生の頃、ベトナムの首都・ハノイで留学生活をしていました。ベトナムに興味があり、機会があれば暮らしてみたいと考える方へ向けて、当時の体験をお話させていただきます。</p>
-                    <a href="https://vietnam-nagoya.work/jp/information/experience/20200524.html" class="btn btn-warning">もっと見る</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-sm-6">
-                <div class="card mt-2">
-                  <div class="card-body">
-                    <h5 class="card-title">ベトナムの歴史</h5>
-                    <p class="card-text">
-                      ベトナムの歴史を、ベトナムに最初の統治国家ができるまでの<strong>黎明期</strong>、千年にわたる中国による支配からの脱却までの<strong>北属期</strong>、中国との対立の末に阮朝成立に伴い「越南」の名を得た<strong>対北進南期</strong>、アヘン戦争から仏領時代をへてベトナム戦争までの<strong>近代史</strong>、の4つに分けて簡単に概説しています。
-                    </p>
-                    <a href="https://vietnam-nagoya.work/jp/information/basic/info002.html" class="btn btn-warning">もっと見る</a>
-                  </div>
-                </div>
-              </div>
-
-            </div>
+            </a>
           </div>
 
+          <div class="col-sm-4">
+            <a href="#" class="blog">
+              <div class="blogContent">
+                <div class="blogType">
+                  Blog
+                </div>
+                <div class="blogImage">
+                  <img src="./images/events/event006/header_tn.jpg" class="img-fluid rounded mt-5 lazyload" alt="...">
 
+                </div>
+                <div class="blogPostDate">
+                  2020/10/26
+                </div>
+                <div class="blogPostTitle">
+                  言葉の壁を超えろ！嘘をつけ！悪魔のハロウィンパーティー
+                </div>
+                <div class="blogDispriction">
+                  人狼ゲームなどベトナム人と日本人が一緒にならないとわからない問題で盛り上がりました！
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
+      <div class="learnMoreBtn">
+        <a class="btn btn-outline-secondary rounded-0" href="#" role="button">他の記事も見る</a>
+      </div>
 
-    </div>
+    </section>
 
-    <div class="otherContent">
-      <script>
-        insertReccomentdation(ln, 0);
-      </script>
-    </div>
-    </div>
+    <section class="leftAnime topics">
+      <div class="sectionTitle">
+        <h2>お役立ち記事</h2>
+      </div>
+      <div class="container">
+        <div class="row">
 
 
-    <div class="card m-2 p-2" style="text-align:center">
+          <div class="col-sm-4">
+            <a href="#" class="blog">
+              <div class="blogContent">
+                <div class="blogType">
+                  Event
+                </div>
+                <div class="blogImage">
+                  <img src="./images/aboutus/index-image3.jpg" class="img-fluid rounded mt-5 lazyload" alt="...">
+
+                </div>
+                <div class="blogPostDate">
+                  2020/06/08
+                </div>
+                <div class="blogPostTitle">
+                  次回のベトナム交流会
+                </div>
+                <div class="blogDispriction">
+                  なんと‼️今回で8回目なんです✨👏
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-4">
+            <a href="#" class="blog">
+              <div class="blogContent">
+                <div class="blogType">
+                  Info
+                </div>
+                <div class="blogImage">
+                  <img src="./images/sample02.jpg" class="img-fluid rounded mt-5 lazyload" alt="...">
+
+                </div>
+                <div class="blogPostDate">
+                  2020/06/12
+                </div>
+                <div class="blogPostTitle">
+                  はじめての交流会
+                </div>
+                <div class="blogDispriction">
+                  交流会に今まで参加したことなかった方！大丈夫です！みんなはじめは初心者でした。
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-4">
+            <a href="#" class="blog">
+              <div class="blogContent">
+                <div class="blogType">
+                  Blog
+                </div>
+                <div class="blogImage">
+                  <img src="./images/sample01.jpg" class="img-fluid rounded mt-5 lazyload" alt="...">
+
+                </div>
+                <div class="blogPostDate">
+                  2020/XX/XX
+                </div>
+                <div class="blogPostTitle">
+                  現在準備中
+                </div>
+                <div class="blogDispriction">
+                  ベトナム語版ブログは現在準備中です。お楽しみに〜
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="learnMoreBtn">
+        <a class="btn btn-outline-secondary rounded-0" href="#" role="button">他の記事も見る</a>
+      </div>
+    </section>
+
+
+
+
+
+
+
+    <div class="card m-3 mt-5 p-2" style="text-align:center">
       <h6><span class="badge badge-info m-2">AD</span></h6>
 
       <a href="https://hb.afl.rakuten.co.jp/ichiba/1ba221c1.5cd25fc0.1ba221c2.5993f0c6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftainodaidokoro%2F10000151%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjMwMHgzMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImxlZnQiLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjAsImJidG4iOjEsInByb2QiOjB9"
