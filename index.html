@@ -22,7 +22,9 @@
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
+
 
   <link rel="stylesheet" href="style.css">
   <script src="js/sentence.js"></script>
@@ -31,40 +33,6 @@
     const ln = "jp"
     document.title = groupName.jp + ' | ' + document.title;
   </script>
-  <style>
-    /* donate専用 */
-    .donateTitle {
-      text-align: right;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      margin: auto;
-      width: 100%;
-      height: 3.2rem;
-
-    }
-
-    .donateContainer {
-      vertical-align: middle;
-      font-family: 'Sawarabi Mincho', sans-serif;
-    }
-
-    .carousel-caption {
-      top: 0px;
-      right: 10%;
-      left: 20%;
-    }
-
-    .donateheader {
-      color: #222222;
-      font-family: 'Sawarabi Mincho', sans-serif;
-    }
-
-    /* donate専用 */
-  </style>
-
 
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -83,15 +51,35 @@
 </head>
 
 <body>
+
   <!-- ローディング画面 -->
   <script>
-    insertLoading()
+    // insertLoading()
   </script>
 
   <header>
-    <script>
+    <!-- <script>
       insertHeader(ln, 0)
-    </script>
+    </script> -->
+    <header>
+      <section class="headerSection">
+        <div class="header-bg">
+          <div class="headerImage">
+          </div>
+        </div>
+        <div class="arrawIcon">
+          <p>cuộn xuống</p>
+          <i class="fas fa-angle-double-down faa-vertical animated"></i>
+        </div>
+        <div class="headerMessage rounded shadow">
+          <h1>Gặp gỡ và chào đón Việt Nam tại Nagoya</h1>
+          <p>ベトナム交流会は、日本に来ているベトナム人が日本人とのつながり・<br>思い出を作ってもらうために開催しています。</p>
+        </div>
+
+      </section>
+
+
+    </header>
   </header>
   <main>
 
@@ -99,51 +87,32 @@
       headerAlert()
     </script>
 
-    <!-- カルーセル -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./images/index/header-1.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption">
-            <!-- 特設 -->
-            <div class="donateContainer">
-              <div class="donateTitle">
-                <h3 class="donateheader">私達に今できること</h3>
-                <a class="btn btn-dark" href="https://vietnam-nagoya.work/jp/information/campaign/index.html" role="button">もっと詳しく</a>
-              </div>
-            </div>
-            <!-- 特設ここまで -->
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./images/index/header-2.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption">
-            <h5></h5>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./images/index/header-3.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption">
-            <h5></h5>
-          </div>
-        </div>
+    <section class="noticeSection mt-5 leftAnime">
+      <div class="sectionTitle">
+        <h2>お知らせ</h2>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
+      <div class="noticeTable">
+        <table class="table table-borderless">
+          <tbody>
+            <tr>
+              <td>2020/06/11</td>
+              <td>
+                新しいイベント「０円ピクニック」の情報を記載しました。皆様のご参加お待ちしております！詳しくは<a href="https://vietnam-nagoya.work/jp/events/events008.html">こちら</a>
+              </td>
+            </tr>
+            <tr>
+              <td>2020/05/24</td>
+              <td>
+                運営メンバーの田中さんが実際にベトナムに留学した経験を記事にしました。詳しくは<a href="https://vietnam-nagoya.work/jp/information/experience/20200524.html">こちら</a>
+              </td>
+            </tr>
 
-    <section class="newInfoSection">
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- <section class="newInfoSection">
       <div class="newInformation m-sm-5 m-3 mt-5">
 
         <div class="titleSection">
@@ -173,86 +142,61 @@
         </table>
 
       </div>
+    </section> -->
+
+    <section class="ourConceptSection leftAnime">
+      <div class="sectionTitle">
+        <h2>コンセプト</h2>
+      </div>
+
+      <div class="container mt-1">
+        <div class="row">
+          <div class="col-sm-4 mt-5 mt-sm-2 bottomAnime">
+            <div class="ourConceptContent mt-3">
+              <h3 class="mt-3">発見</h3>
+              <i class="fas fa-search"></i>
+              <img src="./images/aboutus/index-image1.jpg" class="img-fluid rounded mt-5" alt="...">
+            </div>
+            <div class="ourConceptText mt-2">
+              お互いの国の文化を理解する企画を開催しています。
+            </div>
+          </div>
+
+          <div class="col-sm-4 mt-5 mt-sm-2 bottomAnime">
+            <div class="ourConceptContent">
+              <h3 class="mt-3">共有</h3>
+              <i class="fas fa-share-alt"></i>
+              <img src="./images/aboutus/index-image2.jpg" class="img-fluid rounded mt-5" alt="...">
+            </div>
+            <div class="ourConceptText mt-2">
+              当日会場にお越しいただいた方同士での積極的なコミュニケーションをおねがいします。
+            </div>
+          </div>
+          <div class="col-sm-4 mt-5 mt-sm-2 bottomAnime">
+            <div class="ourConceptContent">
+              <h3 class="mt-3">記憶</h3>
+              <i class="fas fa-shoe-prints"></i>
+              <img src="./images/aboutus/index-image3.jpg" class="img-fluid rounded mt-5" alt="...">
+            </div>
+            <div class="ourConceptText mt-2">
+              写真撮影などしていただきそれぞれの記憶に残るイベントとしてください。
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
     </section>
 
     <div class="spaceer mt-5 mb-5"></div>
 
-    <div class="mainContent">
+    <!-- <div class="mainContent">
       <!-- コンセプト -->
-      <div class="ourConcept container">
-        <div class="titleSection">
-          <span class="titleCaption">Concept</span>
-          <h1 class="conceptTitle">
-            コンセプト
-          </h1>
-
-        </div>
-
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="image-center mt-3">
-              <img src="./images/aboutus/index-image1.jpg" alt="" class="img-fluid rounded" alt="Responsive image">
-            </div>
-            <div class="conceptMessage mt-3">
-              <span class="border-top border-dark" style="display:inline-block">
-                <h2 class="conceptNumber">01</h2>
-              </span>
-              <span style="display:inline-block">
-                <h2 class="conceptSubtitle">発見</h2>
-              </span>
-              <span>
-                <p>お互いの国の文化を理解する企画を開催しています。</p>
-              </span>
-            </div>
-          </div>
-
-          <div class="col-sm-4">
-            <div class="image-center mt-3">
-              <img src="./images/aboutus/index-image2.jpg" alt="" class="img-fluid rounded" alt="Responsive image">
-            </div>
-            <div class="conceptMessage mt-3">
-              <span class="border-top border-dark" style="display:inline-block">
-                <h2 class="conceptNumber">02</h2>
-              </span>
-              <span style="display:inline-block">
-                <h2 class="conceptSubtitle">共有</h2>
-              </span>
-              <span>
-                <p>
-                  当日会場にお越しいただいた方同士での積極的なコミュニケーションをおねがいします。
-                </p>
-              </span>
-            </div>
-          </div>
 
 
-          <div class="col-sm-4">
-            <div class="image-center mt-3">
-              <img src="./images/aboutus/index-image3.jpg" alt="" class="img-fluid rounded" alt="Responsive image">
-            </div>
-            <div class="conceptMessage mt-3">
-              <span class="border-top border-dark" style="display:inline-block">
-                <h2 class="conceptNumber">03</h2>
-              </span>
-              <span style="display:inline-block">
-                <h2 class="conceptSubtitle">記憶</h2>
-              </span>
-              <span>
-                <p>写真撮影などしていただきそれぞれの記憶に残るイベントとしてください。</p>
-              </span>
-            </div>
-          </div>
-        </div>
 
-        <div class="detailButton mb-5">
-          <a class="btn btn-warning btn-sm" href="https://vietnam-nagoya.work/jp/aboutus/aboutus.html" role="button">チーム概要を見る</a>
-        </div>
-
-
-      </div>
-
-
-    </div>
+    </div> 
 
     <div class="information">
       <div class="titleSection">
@@ -308,7 +252,7 @@
                       今回は🍙0円ピクニック🍙
                       青空の下でみんなでピクニックしましょう〜🌼
 
-                        </p>
+                    </p>
                     <a href="https://vietnam-nagoya.work/jp/events/events008.html" class="btn btn-warning">もっと見る</a>
                   </div>
                 </div>
