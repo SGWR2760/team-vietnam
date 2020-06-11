@@ -48,9 +48,12 @@
     gtag('config', 'UA-77378955-3');
   </script>
   <script data-ad-client="ca-pub-9384631143962824" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
 </head>
 
-<body>
+
+<body >
 
   <!-- ローディング画面 -->
   <script>
@@ -61,25 +64,47 @@
     <!-- <script>
       insertHeader(ln, 0)
     </script> -->
-    <header>
-      <section class="headerSection">
-        <div class="header-bg">
-          <div class="headerImage">
-          </div>
-        </div>
-        <div class="arrawIcon">
-          <p>cuộn xuống</p>
-          <i class="fas fa-angle-double-down faa-vertical animated"></i>
-        </div>
-        <div class="headerMessage rounded shadow">
-          <h1>Gặp gỡ và chào đón Việt Nam tại Nagoya</h1>
-          <p>ベトナム交流会は、日本に来ているベトナム人が日本人とのつながり・<br>思い出を作ってもらうために開催しています。</p>
-        </div>
+    <div id="navArea">
 
-      </section>
+      <nav>
+        <div class="inner">
+          <ul>
+            <li><a href="#">Text</a></li>
+            <li><a href="#">Text</a></li>
+            <li><a href="#">Text</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="toggle_btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div id="mask"></div>
+
+    </div>
+
+    </div>
+    <section class="headerSection">
+      <div class="header-bg">
+        <div class="headerImage">
+        </div>
+      </div>
+      <div class="arrawIcon">
+        <p>cuộn xuống</p>
+        <i class="fas fa-angle-double-down faa-vertical animated"></i>
+      </div>
+      <div class="headerMessage rounded shadow">
+        <h1>Gặp gỡ và chào đón Việt Nam tại Nagoya</h1>
+        <p>ベトナム交流会は、日本に来ているベトナム人が日本人とのつながり・<br>思い出を作ってもらうために開催しています。</p>
+      </div>
+
+    </section>
 
 
-    </header>
+
   </header>
   <main>
 
@@ -112,37 +137,6 @@
       </div>
     </section>
 
-    <!-- <section class="newInfoSection">
-      <div class="newInformation m-sm-5 m-3 mt-5">
-
-        <div class="titleSection">
-          <span class="titleCaption">New Information</span>
-          <h1 class="conceptTitle">
-            お知らせ
-          </h1>
-        </div>
-
-        <table class="table table-borderless">
-          <tbody>
-            <tr>
-              <td>5.26</td>
-              <td>
-                新しいイベント「０円ピクニック」の情報を記載しました。皆様のご参加お待ちしております！詳しくは<a href="https://vietnam-nagoya.work/jp/events/events008.html">こちら</a>
-              </td>
-            </tr>
-            <tr>
-
-
-              <td>5.24</td>
-              <td>
-                運営メンバーの田中さんが実際にベトナムに留学した経験を記事にしました。詳しくは<a href="https://vietnam-nagoya.work/jp/information/experience/20200524.html">こちら</a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-
-      </div>
-    </section> -->
 
     <section class="ourConceptSection leftAnime">
       <div class="sectionTitle">
@@ -189,14 +183,7 @@
 
     </section>
 
-    <div class="spaceer mt-5 mb-5"></div>
 
-    <!-- <div class="mainContent">
-      <!-- コンセプト -->
-
-
-
-    </div> 
 
     <div class="information">
       <div class="titleSection">
@@ -372,5 +359,25 @@
     </script>
   </footer>
 </body>
+<script type="text/javascript">
+  (function($) {
+    var $body = $('body');
+    var $btn = $('.toggle_btn');
+    var $mask = $('#mask');
+    var open = 'open'; // class
+    // menu open close
+    $btn.on('click', function() {
+      if (!$body.hasClass(open)) {
+        $body.addClass(open);
+      } else {
+        $body.removeClass(open);
+      }
+    });
+    // mask close
+    $mask.on('click', function() {
+      $body.removeClass(open);
+    });
+  })(jQuery);
+</script>
 
 </html>

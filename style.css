@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;900&display=swap');
+
 body {
   font-family: 'M PLUS Rounded 1c', sans-serif;
 }
@@ -13,7 +14,6 @@ body {
 strong {
   background: linear-gradient(transparent 60%, #ffff66 60%);
 }
-
 
 /* headerSection */
 .sectionTitle {
@@ -56,7 +56,6 @@ strong {
   width: 100%;
 }
 
-
 /* スマホ・タブレット */
 @media screen and (max-width: 990px) {
   .headerSection {
@@ -92,7 +91,8 @@ strong {
     margin: 16px;
     position: relative;
     top: -178;
-    margin-bottom: -150;    /* width: 100%; */
+    margin-bottom: -150;
+    /* width: 100%; */
     /*相殺*/
   }
 
@@ -152,7 +152,7 @@ strong {
     padding: 16px;
     position: absolute;
     top: 50%;
-    left: 30%;
+    left: 35%; /*文字の幅によって変える*/
     transform: translateY(-50%) translateX(-50%);
     -webkit- transform: translateY(-50%) translateX(-50%);
   }
@@ -176,7 +176,6 @@ strong {
   }
 }
 
-
 /* loading */
 .card-title.info {
   margin-top: 32px;
@@ -190,7 +189,7 @@ strong {
   color: white
 }
 
-.nav-link{
+.nav-link {
   color: #222222;
 }
 
@@ -211,13 +210,13 @@ strong {
   background: #E3B505;
 }
 
-.breadcrumb{
-  background-color:transparent;
-}
-.breadcrumb a{
-  color:#d49f00;
+.breadcrumb {
+  background-color: transparent;
 }
 
+.breadcrumb a {
+  color: #d49f00;
+}
 
 .headerLink {
   color: #212529;
@@ -261,7 +260,6 @@ strong {
   text-align: center;
   font-family: 'Kosugi Maru', sans-serif;
 } */
-
 .informationTab {
   text-align: center;
   padding-left: unset;
@@ -308,23 +306,25 @@ strong {
 
 .autherSNS {
   display: block;
-  font-size:1.5rem;
+  font-size: 1.5rem;
 }
-.autherSNS a{
-  color:gray;
+
+.autherSNS a {
+  color: gray;
 }
 
 .copyright {
   text-align: center;
   padding-top: 8px;
 }
-  @media screen and (max-width: 480px) {}
 
-  @media screen and (min-width: 481px) {
-    .card {
-      /* width: 45%; */
-    }
+@media screen and (max-width: 480px) {}
+
+@media screen and (min-width: 481px) {
+  .card {
+    /* width: 45%; */
   }
+}
 
 /* .newInfoSection{
   background-color: #ffefc0;
@@ -333,23 +333,24 @@ strong {
 /* .titleCaption{
 
 } */
-.titleSection{
+.titleSection {
   text-align: center;
 }
-.conceptTitle{
+
+.conceptTitle {
   font-size: 1.5rem;
   font-weight: 900;
 }
 
-
-.conceptNumber{
-  font-size: 1.4rem;
-}
-.conceptSubtitle{
+.conceptNumber {
   font-size: 1.4rem;
 }
 
-.detailButton{
+.conceptSubtitle {
+  font-size: 1.4rem;
+}
+
+.detailButton {
   text-align: center;
 }
 
@@ -365,3 +366,194 @@ strong {
 }
 
 .ourConceptText {}
+
+/*============
+nav
+=============*/
+nav {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -300px;
+  bottom: 0;
+  width: 300px;
+  background: #ffffff;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  transition: all .5s;
+  z-index: 3;
+  opacity: 0;
+}
+
+.open nav {
+  left: 0;
+  opacity: 1;
+}
+
+nav .inner {
+  padding: 25px;
+}
+
+nav .inner ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav .inner ul li {
+  position: relative;
+  margin: 0;
+  border-bottom: 1px solid #333;
+}
+
+nav .inner ul li a {
+  display: block;
+  color: #333;
+  font-size: 14px;
+  padding: 1em;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+nav .inner ul li a:hover {
+  background: #e4e4e4;
+}
+
+@media screen and (max-width: 767px) {
+  nav {
+    left: -220px;
+    width: 220px;
+  }
+}
+
+/*============
+nav
+=============*/
+nav {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -300px;
+  bottom: 0;
+  width: 300px;
+  background: #ffffff;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  transition: all .5s;
+  z-index: 3;
+  opacity: 0;
+}
+.open nav {
+  left: 0;
+  opacity: 1;
+}
+nav .inner {
+  padding: 25px;
+}
+nav .inner ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav .inner ul li {
+  position: relative;
+  margin: 0;
+  border-bottom: 1px solid #333;
+}
+nav .inner ul li a {
+  display: block;
+  color: #333;
+  font-size: 14px;
+  padding: 1em;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+nav .inner ul li a:hover {
+  background: #e4e4e4;
+}
+@media screen and (max-width: 767px) {
+  nav {
+    left: -220px;
+    width: 80%;
+  }
+}
+/*============
+.toggle_btn
+=============*/
+.toggle_btn {
+  display: block;
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  width: 30px;
+  height: 30px;
+  transition: all .5s;
+  cursor: pointer;
+  z-index: 3;
+}
+.open .toggle_btn {
+  left: 330px;
+}
+.toggle_btn span {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: #333;
+  border-radius: 4px;
+  transition: all .5s;
+}
+.toggle_btn span:nth-child(1) {
+  top: 4px;
+}
+.toggle_btn span:nth-child(2) {
+  top: 14px;
+}
+.toggle_btn span:nth-child(3) {
+  bottom: 4px;
+}
+.open .toggle_btn span {
+  background-color: #fff;
+}
+.open .toggle_btn {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.open .toggle_btn span:nth-child(1), .open .toggle_btn span:nth-child(3) {
+  width: 16px;
+}
+.open .toggle_btn span:nth-child(1) {
+  -webkit-transform: translate(-1px,4px) rotate(-45deg);
+  transform: translate(-1px,4px) rotate(-45deg);
+}
+.open .toggle_btn span:nth-child(3) {
+  -webkit-transform: translate(-1px,-4px) rotate(45deg);
+  transform: translate(-1px,-4px) rotate(45deg);
+}
+@media screen and (max-width: 767px) {
+  .open .toggle_btn {
+    left: 85%;
+  }
+}
+/*============
+#mask
+=============*/
+#mask {
+  display: none;
+  transition: all .5s;
+}
+.open #mask {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .8;
+  z-index: 2;
+  cursor: pointer;
+}
