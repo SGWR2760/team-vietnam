@@ -27,9 +27,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
 
-  <link rel="stylesheet" href="./style.css">
   <script src="./../js/sentence.js"></script>
   <script src="./../js/multilanguage.js"></script>
+
+  <link rel="stylesheet" href="./style.css">
+
+
+
 
   <script>
     const ln = "en"
@@ -76,11 +80,39 @@
 
     gtag('config', 'UA-77378955-3');
   </script>
+  <style>
+
+  </style>
 
 </head>
 
 <body>
   <header>
+    <div id="navArea">
+
+      <nav class="innerMenu">
+        <div class="inner">
+          <ul>
+            <li><script>ins(aboutus.vn)</script></li>
+            <li><script>ins(aboutus.vn)</script></li>
+            <li><script>ins(aboutus.vn)</script></li>
+
+
+          </ul>
+        </div>
+      </nav>
+
+      <div class="toggle_btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div id="mask"></div>
+
+    </div>
+
+
     <section class="headerSection">
       <div class="header-bg">
         <div class="headerImage">
@@ -348,6 +380,26 @@
 
 
   // sr.reveal('.sectionTitle', origin: 'right', distance: '50px', scale: 0.5);
+</script>
+<script type="text/javascript">
+  (function($) {
+    var $body = $('body');
+    var $btn = $('.toggle_btn');
+    var $mask = $('#mask');
+    var open = 'open'; // class
+    // menu open close
+    $btn.on('click', function() {
+      if (!$body.hasClass(open)) {
+        $body.addClass(open);
+      } else {
+        $body.removeClass(open);
+      }
+    });
+    // mask close
+    $mask.on('click', function() {
+      $body.removeClass(open);
+    });
+  })(jQuery);
 </script>
 
 </html>
