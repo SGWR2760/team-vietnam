@@ -253,9 +253,9 @@ a:hover {
   color: white
 }
 
-.nav-link {
+/* .nav-link {
   color: #222222;
-}
+} */
 
 /* #navbarSupportedContent>ul>li:nth-child(7)>a {
   color: black;
@@ -477,7 +477,7 @@ nav {
   display: block;
   position: fixed;
   top: 0;
-  left: -300px;
+  left: -500px;
   bottom: 0;
   width: 300px;
   background: #ffffff;
@@ -525,7 +525,7 @@ nav .inner ul li a:hover {
 
 @media screen and (max-width: 767px) {
   nav {
-    left: -220px;
+    left: -400px;
     width: 80%;
   }
 }
