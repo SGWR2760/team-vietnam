@@ -102,17 +102,17 @@ function headerAlert() {
 }
 
 function insertReccomentdation(type, depth) {
-  var completePath = buildPath(depth);
-  var html = "";
-  html += ' <div class="listContent">';
-  html += '   <ul class="list-group">';
-  html += '     <li class="list-group-item"><script>ins(allEventsInfo.' + type + ');</script></li>';
-  // html += '     <li class="list-group-item"><img src="./' + completePath + 'images/pastevents.svg"> <script>ins(allPastEvents.' + type + ');</script></li>';
-
-  html += '     <li class="list-group-item"><script>ins(allUsefulInfo.' + type + ');</script></li>';
-  html += '   </ul>';
-  html += ' </div>';
-  document.write(html);
+  // var completePath = buildPath(depth);
+  // var html = "";
+  // html += ' <div class="listContent">';
+  // html += '   <ul class="list-group">';
+  // html += '     <li class="list-group-item"><script>ins(allEventsInfo.' + type + ');</script></li>';
+  // // html += '     <li class="list-group-item"><img src="./' + completePath + 'images/pastevents.svg"> <script>ins(allPastEvents.' + type + ');</script></li>';
+  //
+  // html += '     <li class="list-group-item"><script>ins(allUsefulInfo.' + type + ');</script></li>';
+  // html += '   </ul>';
+  // html += ' </div>';
+  // document.write(html);
 }
 
 function buildPath(depth) {

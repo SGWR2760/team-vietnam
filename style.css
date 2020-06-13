@@ -274,19 +274,24 @@ a:hover {
 } */
 .breadcrumb {
   background-color: transparent;
+  margin-bottom: 0!important;
 }
 
+
 .breadcrumb a {
-  color: #d49f00;
+  color: var(--main-accent-color);
 }
 
 .headerLink {
   color: #212529;
 }
 
+
+
 .alert01 {
   margin: 16px;
 }
+
 
 /* #pills-tab {
   padding: 36px 0px;
@@ -630,6 +635,7 @@ nav .inner ul li a:hover {
   color: white;
   padding: 2rem 1rem 16px 16px;
   font-size: 0.8rem;
+  margin-top: 3rem;
 }
 
 .footerPageMenu ul {
@@ -706,4 +712,21 @@ nav .inner ul li a:hover {
   left: 0;
   margin: auto;
   text-align: center;
+}
+
+/* article */
+.articleSpaceer{
+  height: 2.25rem;
+}
+.articleCard{
+
+}
+.spridArticleHeaderInfo{
+  color: rgba(0, 0, 0, 0.1);
+}
+.aticlePostDate{
+  /* margin-left: 8px; */
+}
+.aticlePostType{
+  margin-left: 8px;
 }

@@ -74,7 +74,12 @@
       headerAlert()
     </script>
 
-    <nav aria-label="breadcrumb">
+    <div class="articleSpaceer">
+
+    </div>
+
+
+    <div aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="./../../index.html">トップ</a></li>
         <li class="breadcrumb-item"><a href="./index.html">イベント情報</a></li>
@@ -84,21 +89,28 @@
           </script>
         </li>
       </ol>
-    </nav>
-
-
+    </div>
     <div class="mainContent container">
       <div class="row">
         <div class="col">
 
-          <div class="card mt-2">
-            <img src="./../../images/events/event008/header.jpg" class="card-img-top" alt="...">
+          <div class="card rounded-0">
             <div class="card-body">
               <h1 class="card-title">
                 <span class="breakline">0円ピクニック🍙</span>
               </h1>
 
-              <a class="btn btn-primary mb-2" href="#japaneseArticle" role="button">日本ページを表示</a>
+              <hr>
+              <span class="aticlePostType">Event</span>
+              <span class="spridArticleHeaderInfo">｜</span>
+              <span class="aticlePostDate">2020/06/13</span>
+              <hr>
+
+
+
+              <img src="./../../images/events/event008/header.jpg" class="card-img-top" alt="...">
+
+              <a class="btn btn-primary w-100 mt-3 mb-3" href="#japaneseArticle" role="button">日本ページを表示</a>
 
               <div class="alert alert-warning mt-3" role="alert">
                 Địa điểm đã thay đổi từ Công viên Tsurumai thành Trung tâm Quốc tế. Hãy cẩn thận.
@@ -379,16 +391,10 @@
 
 
 
-              <!-- <h2 class="card-title info">画像の挿入</h2>
-              <p class="card-text">画像を挿入できます。画質は期待できません。</p>
-              <figure class="figure">
-                <img src="./../../images/info/info001/001.png" class="figure-img img-fluid rounded" alt="...">
-                <figcaption class="figure-caption">画像の説明を入れられます。</figcaption>
-              </figure> -->
-              <a class="btn btn-primary mt-5 w-100" href="https://www.facebook.com/events/s/picnic-zero-yen%E7%AC%AC8%E5%9B%9E%E3%83%98%E3%83%88%E3%83%8A%E3%83%A0%E4%BA%A4%E6%B5%81%E4%BC%9A-0%E5%86%86%E3%83%92%E3%82%AF/254952168944930/"
+
+              <a class="btn btn-outline-primary mt-5 w-100" href="https://www.facebook.com/events/s/picnic-zero-yen%E7%AC%AC8%E5%9B%9E%E3%83%98%E3%83%88%E3%83%8A%E3%83%A0%E4%BA%A4%E6%B5%81%E4%BC%9A-0%E5%86%86%E3%83%92%E3%82%AF/254952168944930/"
                 target="_blank" role="button">
                 Facebookで開く
-                <img src="./../../images/events/detaiIcon/tab.svg">
               </a>
 
               <!-- 申し込みボックス -->
@@ -401,9 +407,7 @@
               </div>
 
             </div>
-            <div class="card-footer text-muted">
-              投稿：2020/05/25
-            </div>
+
           </div>
         </div>
       </div>
@@ -414,7 +418,6 @@
         insertReccomentdation(ln, depth);
       </script>
     </div>
-    </div>
 
 
   </main>
@@ -424,5 +427,7 @@
     </script>
   </footer>
 </body>
+
+<script src="./../../js/behaviour.js"></script>
 
 </html>
