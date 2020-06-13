@@ -29,6 +29,8 @@
   <script>
     const ln = "jp";
     const depth = 2;
+    var breadlistCurrentpage = document.title;
+
     document.title = groupName.jp + ' | ' + document.title;
   </script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -69,8 +71,25 @@
       headerAlert()
     </script>
 
+    <div class="articleSpaceer"></div>
+
+
+
+
+    <div aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="./../../index.html">トップ</a></li>
+        <li class="breadcrumb-item"><a href="./index.html">イベント情報</a></li>
+        <li class="breadcrumb-item active" aria-current="page">
+          <script>
+            ins(breadlistCurrentpage)
+          </script>
+        </li>
+      </ol>
+    </div>
+
     <div class="mainContent container">
-      <div class="alert alert-info mt-3" role="alert">
+      <div class="alert alert-info" role="alert">
         <span class="breakline">このイベントは終了しました。</span>
         <span class="breakline">ご参加ありがとうございました。</span>
       </div>
@@ -78,12 +97,22 @@
         <div class="col">
 
           <div class="card">
-            <img src="./../../images/events/event007/header.jpg" class="card-img-top" alt="...">
             <div class="card-body">
+
+
               <h1 class="card-title">
                 <span class="breakline">寿司で国際交流</span>
                 <span class="breakline">Sự kiện làm sushi</span>
               </h1>
+
+              <hr>
+              <span class="aticlePostType">Event</span>
+              <span class="spridArticleHeaderInfo">｜</span>
+              <span class="aticlePostDate">2020/05/15</span>
+              <hr>
+
+              <img src="./../../images/events/event007/header.jpg" class="card-img-top" alt="...">
+
 
               <p class="card-text">
                 2020第一弾企画‼️<br>
@@ -229,15 +258,12 @@
                 <img src="./../../images/info/info001/001.png" class="figure-img img-fluid rounded" alt="...">
                 <figcaption class="figure-caption">画像の説明を入れられます。</figcaption>
               </figure> -->
-              <a class="btn btn-primary mt-5 w-100" href="https://www.facebook.com/events/494984524518080/" target="_blank" role="button">
+              <a class="btn btn-outline-primary mt-5 w-100" href="https://www.facebook.com/events/494984524518080/" target="_blank" role="button">
                 Facebookで開く
-                <img src="./../../images/events/detaiIcon/tab.svg">
               </a>
 
             </div>
-            <div class="card-footer text-muted">
-              投稿：2020/05/15
-            </div>
+
           </div>
         </div>
       </div>
@@ -258,5 +284,6 @@
     </script>
   </footer>
 </body>
+<script src="./../../js/behaviour.js"></script>
 
 </html>
