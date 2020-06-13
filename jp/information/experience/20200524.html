@@ -76,6 +76,10 @@
     i {
       margin: 0px 5px;
     }
+
+    .fas {
+      font-size: 1.75rem;
+    }
   </style>
 
 </head>
@@ -83,7 +87,7 @@
 <body>
   <!-- ローディング画面 -->
   <script>
-    insertLoading()
+    // insertLoading()
   </script>
   <header>
     <script>
@@ -95,10 +99,14 @@
     <script>
       headerAlert()
     </script>
+    <div class="articleSpaceer"></div>
 
-    <nav aria-label="breadcrumb">
+
+
+
+    <div aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="./../../../index.html">トップ</a></li>
+        <li class="breadcrumb-item"><a href="./../../index.html">トップ</a></li>
         <li class="breadcrumb-item"><a href="./../index.html">お役立ち情報</a></li>
         <li class="breadcrumb-item active" aria-current="page">
           <script>
@@ -106,13 +114,21 @@
           </script>
         </li>
       </ol>
-    </nav>
+    </div>
 
     <div class="mainContent container">
       <div class="card m-2">
-        <img src="./../../../images/info/experience/20200524/header.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h1 class="card-title">ベトナムで暮らす～私の留学体験記～</h1>
+
+          <hr>
+          <span class="aticlePostType">Info</span>
+          <span class="spridArticleHeaderInfo">｜</span>
+          <span class="aticlePostDate">2020/05/24</span>
+          <hr>
+
+          <img src="./../../../images/info/experience/20200524/header.jpg" class="card-img-top" alt="...">
+
 
           <p>こんにちは。<br>
             ベトナム交流会、メンバーの田中です。
@@ -240,9 +256,7 @@
 
 
         </div>
-        <div class="card-footer text-muted">
-          投稿：2020/05/24
-        </div>
+
       </div>
 
       <div class="card m-2 p-2" style="text-align:center">
@@ -268,5 +282,6 @@
     </script>
   </footer>
 </body>
+<script src="./../../../js/behaviour.js"></script>
 
 </html>
