@@ -730,3 +730,8 @@ nav .inner ul li a:hover {
 .aticlePostType{
   margin-left: 8px;
 }
+
+/* カードテキストの読みやすさ改善 */
+.card-text{
+  line-height: 2rem;
+}
