@@ -28,6 +28,7 @@
   <script>
     const ln = "jp";
     const depth = 2;
+    var breadlistCurrentpage = document.title;
     document.title = groupName.jp + ' | ' + document.title;
   </script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -68,21 +69,44 @@
       headerAlert()
     </script>
 
+    <div class="articleSpaceer"></div>
+
+
+    <div aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="./../../index.html">トップ</a></li>
+        <li class="breadcrumb-item"><a href="./index.html">イベント情報</a></li>
+        <li class="breadcrumb-item active" aria-current="page">
+          <script>
+            ins(breadlistCurrentpage)
+          </script>
+        </li>
+      </ol>
+    </div>
+
     <div class="mainContent container">
-      <div class="alert alert-info mt-3" role="alert">
+      <div class="alert alert-info" role="alert">
         <span class="breakline">このイベントは終了しました。</span>
         <span class="breakline">ご参加ありがとうございました。</span>
       </div>
+
       <div class="row">
         <div class="col">
 
           <div class="card">
-            <img src="./../../images/events/event004/header.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h1 class="card-title">
                 <span class="breakline">第4回ベトナム交流会</span>
                 <span class="breakline"></span>
               </h1>
+
+              <hr>
+              <span class="aticlePostType">Event</span>
+              <span class="spridArticleHeaderInfo">｜</span>
+              <span class="aticlePostDate">2020/05/16</span>
+              <hr>
+
+              <img src="./../../images/events/event004/header.jpg" class="card-img-top" alt="...">
 
               <p class="card-text">
                 第4回ベトナム人🇻🇳×日本人🇯🇵の交流会を開催します！<br>
@@ -190,14 +214,10 @@
                 楽しみながら、仲良くなりたい！そう言った想いで企画しています‼️
               </p>
 
-              <a class="btn btn-primary mt-5 w-100" href="https://www.facebook.com/events/1216247325201449/" target="_blank" role="button">
+              <a class="btn btn-outline-primary mt-3 w-100" href="https://www.facebook.com/events/1216247325201449/" target="_blank" role="button">
                 Facebookで開く
-                <img src="./../../images/events/detaiIcon/tab.svg">
               </a>
 
-            </div>
-            <div class="card-footer text-muted">
-              投稿：2020/05/16
             </div>
           </div>
         </div>
@@ -219,5 +239,5 @@
     </script>
   </footer>
 </body>
-
+<script src="./../../js/behaviour.js"></script>
 </html>
