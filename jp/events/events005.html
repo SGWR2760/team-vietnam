@@ -23,12 +23,19 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
 
+
+<!-- jqueryが使えるかチェック -->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
   <link rel="stylesheet" href="./../../style.css">
   <script src="./../../js/sentence.js"></script>
   <script src="./../../js/multilanguage.js"></script>
   <script>
     const ln = "jp";
     const depth = 2;
+    var breadlistCurrentpage = document.title;
     document.title = groupName.jp + ' | ' + document.title;
   </script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -48,6 +55,7 @@
     .iconTitle {
       white-space: pre;
     }
+
     .breakline {
       display: inline-block;
     }
@@ -68,6 +76,22 @@
       headerAlert()
     </script>
 
+    <div class="articleSpaceer"></div>
+
+
+
+
+    <div aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="./../../index.html">トップ</a></li>
+        <li class="breadcrumb-item"><a href="./index.html">イベント情報</a></li>
+        <li class="breadcrumb-item active" aria-current="page">
+          <script>
+            ins(breadlistCurrentpage)
+          </script>
+        </li>
+      </ol>
+    </div>
     <div class="mainContent container">
       <div class="alert alert-info mt-3" role="alert">
         <span class="breakline">このイベントは終了しました。</span>
@@ -77,12 +101,22 @@
         <div class="col">
 
           <div class="card">
-            <img src="./../../images/events/event005/header.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h1 class="card-title">
                 <span class="breakline">第5回ベトナム交流会</span>
-                <span class="breakline"></span>
+                <span class="breakline">夏の日本文化に触れよう。18mの流しそうめんクルーズ</span>
               </h1>
+
+
+              <hr>
+              <span class="aticlePostType">Event</span>
+              <span class="spridArticleHeaderInfo">｜</span>
+              <span class="aticlePostDate">2020/05/15</span>
+              <hr>
+
+
+              <img src="./../../images/events/event005/header.jpg" class="card-img-top" alt="...">
+
 
               <p class="card-text">
                 🇻🇳x🇯🇵(ベトナムx日本)<br>
@@ -193,15 +227,12 @@
                 楽しみながら、仲良くなりたい！そう言った想いで企画しています‼️
               </p>
 
-              <a class="btn btn-primary mt-5 w-100" href="https://www.facebook.com/events/380178342601893/" target="_blank" role="button">
+              <a class="btn btn-outline-primary mt-3 w-100" href="https://www.facebook.com/events/380178342601893/" target="_blank" role="button">
                 Facebookで開く
-                <img src="./../../images/events/detaiIcon/tab.svg">
               </a>
 
             </div>
-            <div class="card-footer text-muted">
-              投稿：2020/05/15
-            </div>
+
           </div>
         </div>
       </div>
@@ -216,11 +247,15 @@
 
 
   </main>
+
+  <div id="page_top"><a class="btn" href="#"></a></div>
+
   <footer>
     <script>
       insertFooter(ln, depth);
     </script>
   </footer>
 </body>
+<script src="./../../js/behaviour.js"></script>
 
 </html>
