@@ -60,13 +60,13 @@ function insertFooter(type, depth) {
   html += '  <div class="footerLanguage mb-4">';
   html += '    <ul>';
   html += '      <li>';
-  html += '        <a href="./en">';
+  html += '        <a href="https://vietnam-nagoya.work/en/">';
   html += '          English page<br>';
   html += '          <span class="otherLang">英語のページを表示</span>';
   html += '        </a>';
   html += '      </li>';
   html += '      <li>';
-  html += '        <a href="./vn">';
+  html += '        <a href="https://vietnam-nagoya.work/vn/">';
   html += '          Trang tiếng việt<br>';
   html += '          <span class="otherLang mb-4">ベトナム語のページを表示</span>';
   html += '        </a>';
@@ -158,8 +158,8 @@ function insertHeader(type, depth) {
   html += '      </ul>';
   html += '      <p class="mt-5">Global Menu</p>';
   html += '      <ul>';
-  html += '        <li><a href="./en">英語のページを表示<br>English page</a></li>';
-  html += '        <li><a href="./vn">ベトナム語のページを表示<br>Trang tiếng việt</a></li>';
+  html += '        <li><a href="https://vietnam-nagoya.work/en/">英語のページを表示<br>English page</a></li>';
+  html += '        <li><a href="https://vietnam-nagoya.work/vn/">ベトナム語のページを表示<br>Trang tiếng việt</a></li>';
   html += '      </ul>';
   html += '    </div>';
   html += '  </nav>';
