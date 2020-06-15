@@ -103,6 +103,10 @@
     .linkicon {
       color: #007bff;
     }
+
+    .fas{
+      font-size: 1rem;
+    }
   </style>
 
 </head>
@@ -118,14 +122,20 @@
     <script>
       headerAlert()
     </script>
+    <div class="articleSpaceer"></div>
 
-    <nav aria-label="breadcrumb">
+
+    <div aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="./../../../index.html">トップ</a></li>
+        <li class="breadcrumb-item"><a href="./../../index.html">トップ</a></li>
         <li class="breadcrumb-item"><a href="./../index.html">お役立ち情報</a></li>
-        <li class="breadcrumb-item active" aria-current="page"><script>ins(breadlistCurrentpage)</script></li>
+        <li class="breadcrumb-item active" aria-current="page">
+          <script>
+            ins(breadlistCurrentpage)
+          </script>
+        </li>
       </ol>
-    </nav>
+    </div>
 
 
     <div class="mainContent container">
@@ -133,6 +143,12 @@
         <img src="./../../../images/campaign/header.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h1 class="card-title">私達に今できること</h1>
+          <hr>
+          <span class="aticlePostType">Info</span>
+          <span class="spridArticleHeaderInfo">｜</span>
+          <span class="aticlePostDate">2020/05/21 1:16(JST)</span>
+          <hr>
+
 
           <p class="mt-5">
             新型コロナウイルス感染症に罹患された皆様、及び関係者の皆様に、謹んでお見舞い申し上げます。
@@ -209,9 +225,6 @@
           </p>
 
         </div>
-        <div class="card-footer text-muted">
-          投稿：2020/05/21 1:16(JST)
-        </div>
       </div>
 
       <div class="otherContent">
@@ -229,5 +242,7 @@
     </script>
   </footer>
 </body>
+<script src="./../../../js/behaviour.js"></script>
+
 
 </html>

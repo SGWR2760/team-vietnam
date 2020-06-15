@@ -74,7 +74,7 @@
 <body>
   <!-- ローディング画面 -->
   <script>
-    insertLoading()
+    // insertLoading()
   </script>
   <header>
     <script>
@@ -86,28 +86,44 @@
     <script>
       headerAlert()
     </script>
+    <div class="articleSpaceer"></div>
 
-    <nav aria-label="breadcrumb">
+
+    <div aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="./../../../index.html">トップ</a></li>
+        <li class="breadcrumb-item"><a href="./../../index.html">トップ</a></li>
         <li class="breadcrumb-item"><a href="./../index.html">お役立ち情報</a></li>
-        <li class="breadcrumb-item active" aria-current="page"><script>ins(breadlistCurrentpage)</script></li>
+        <li class="breadcrumb-item active" aria-current="page">
+          <script>
+            ins(breadlistCurrentpage)
+          </script>
+        </li>
       </ol>
-    </nav>
+    </div>
 
     <div class="mainContent container">
       <div class="card m-2">
-        <img src="./../../../images/info/basic/info003/header.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h1 class="card-title">ベトナムの地理</h1>
 
+          <hr>
+          <span class="aticlePostType">Info</span>
+          <span class="spridArticleHeaderInfo">｜</span>
+          <span class="aticlePostDate">2020/05/17</span>
+          <hr>
+
+          <img src="./../../../images/info/basic/info003/header.jpg" class="card-img-top" alt="...">
+
+
           <p class="card-text">
-            南シナ海に沿って南北におよそ1600kmの細長いＳ字型の国土を有するベトナム。東西のもっとも狭いところでは、約50kmの幅しかありません。北には紅河、南にはメコン川の恩恵によってもたらされた肥沃なデルタが広がり、南部では米の三期作や三毛作が行われるほどです。このようなベトナムの国土を、人々はしばしば両端に米かごをつるした天秤棒に例え嬉しそうに話してくれます。
+            南シナ海に沿って南北におよそ1600kmの細長いＳ字型の国土を有するベトナム。東西のもっとも狭いところでは、約50kmの幅しかありません。<br>
+            北には紅河、南にはメコン川の恩恵によってもたらされた肥沃なデルタが広がり、南部では米の三期作や三毛作が行われるほどです。<br>
+            このようなベトナムの国土を、人々はしばしば両端に米かごをつるした天秤棒に例え嬉しそうに話してくれます。
           </p>
-          <p>
+          <p class="card-text">
             一方で、地理的な事情はベトナムの外交に大きな影響を及ぼしています。北は中国、南はカンボジアと接していますが、両国ともに歴史的なイメージは友好関係であるとは言えません。さらに、上述したように極めて狭隘な中部の山岳地帯は国防上大きな意味をもっています。ベトナム政府はこの地域が侵攻されて国土が南北に分断されることを恐れており、国境を接するラオスとは間違っても敵対関係になることを許容しないでしょう。
           </p>
-          <p>
+          <p class="card-text">
             これらを鑑みれば、ベトナムが展開する「世界の全ての国と友人になる」とのスローガンを掲げる”平和的”外交は、少なくとも能動的アクションであるとは言えず、むしろ自分の身を守るための内向的な姿勢であると見るべきなのかもしれません。ベトナム戦争という痛手の記憶が、国内外問わず依然多くの人々に共有されている昨今、「戦いを避ける」という命題のもと、この「平和的」外交路線は必至のものであると言えるでしょう。
           </p>
 
@@ -204,16 +220,9 @@
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d449717.2050745202!2d103.7687617881708!3d10.302256768826817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a78c62b49eda17%3A0x8aa79fbbdd72cdb!2z44OV44O844Kz44OD44Kv5bO2!5e0!3m2!1sja!2sjp!4v1589720807784!5m2!1sja!2sjp"
             class="shadow" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
-
-
-
           <div class="alert alert-secondary mt-5" role="alert">
             この記事は「<a class="alert-link" target="_blank" href="http://humviet.com/basic/knowledge/geography/">ふむふむベトナム</a>」の許可を得て一部加筆修正し転載しています。
           </div>
-
-        </div>
-        <div class="card-footer text-muted">
-          投稿：2020/05/17
         </div>
       </div>
 
@@ -240,5 +249,5 @@
     </script>
   </footer>
 </body>
-
+<script src="./../../../js/behaviour.js"></script>
 </html>

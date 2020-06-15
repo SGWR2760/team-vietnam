@@ -96,7 +96,7 @@
 <body>
   <!-- ローディング画面 -->
   <script>
-    insertLoading()
+    // insertLoading()
   </script>
   <header>
     <script>
@@ -108,20 +108,35 @@
     <script>
       headerAlert()
     </script>
+    <div class="articleSpaceer"></div>
 
-    <nav aria-label="breadcrumb">
+
+    <div aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="./../../../index.html">トップ</a></li>
+        <li class="breadcrumb-item"><a href="./../../index.html">トップ</a></li>
         <li class="breadcrumb-item"><a href="./../index.html">お役立ち情報</a></li>
-        <li class="breadcrumb-item active" aria-current="page"><script>ins(breadlistCurrentpage)</script></li>
+        <li class="breadcrumb-item active" aria-current="page">
+          <script>
+            ins(breadlistCurrentpage)
+          </script>
+        </li>
       </ol>
-    </nav>
+    </div>
+
 
     <div class="mainContent container">
       <div class="card m-2">
-        <img src="./../../../images/info/try/try002/header.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h1 class="card-title">予防接種</h1>
+
+
+          <hr>
+          <span class="aticlePostType">Info</span>
+          <span class="spridArticleHeaderInfo">｜</span>
+          <span class="aticlePostDate">2020/05/19</span>
+          <hr>
+
+          <img src="./../../../images/info/try/try002/header.jpg" class="card-img-top" alt="...">
 
 
           <p class="card-text">
@@ -199,9 +214,7 @@
           </div>
 
         </div>
-        <div class="card-footer text-muted">
-          投稿：2020/05/19
-        </div>
+
       </div>
 
       <div class="card m-2 p-2" style="text-align:center">
@@ -227,5 +240,6 @@
     </script>
   </footer>
 </body>
+<script src="./../../../js/behaviour.js"></script>
 
 </html>

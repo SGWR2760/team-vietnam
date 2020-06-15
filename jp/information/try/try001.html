@@ -102,32 +102,46 @@
 <body>
   <!-- ローディング画面 -->
   <script>
-    insertLoading()
+    // insertLoading()
   </script>
   <header>
     <script>
       insertHeader(ln, depth);
     </script>
   </header>
-  <main>
 
+  <main>
     <script>
       headerAlert()
     </script>
+    <div class="articleSpaceer"></div>
 
-    <nav aria-label="breadcrumb">
+
+    <div aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="./../../../index.html">トップ</a></li>
+        <li class="breadcrumb-item"><a href="./../../index.html">トップ</a></li>
         <li class="breadcrumb-item"><a href="./../index.html">お役立ち情報</a></li>
-        <li class="breadcrumb-item active" aria-current="page"><script>ins(breadlistCurrentpage)</script></li>
+        <li class="breadcrumb-item active" aria-current="page">
+          <script>
+            ins(breadlistCurrentpage)
+          </script>
+        </li>
       </ol>
-    </nav>
+    </div>
 
     <div class="mainContent container">
       <div class="card m-2">
-        <img src="./../../../images/info/try/try001/header.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h1 class="card-title">ベトナム旅行 荷物選びの注意点</h1>
+
+          <hr>
+          <span class="aticlePostType">Info</span>
+          <span class="spridArticleHeaderInfo">｜</span>
+          <span class="aticlePostDate">2020/05/17</span>
+          <hr>
+
+          <!-- <img src="./../../../images/info/try/try001/header.jpg" class="card-img-top" alt="..."> -->
+
 
           <p class="card-text">
             ベトナムへ行ってみるなら！<br>日本とはルールの異なる国へ入るには、まず荷物に気をつけねばなりません。持ち物チェックリストと合わせてご活用ください。
@@ -136,7 +150,7 @@
           <h2 class="mt-5">電圧＆プラグが違う！</h2>
           <p class="card-text">
             ベトナム国内の電圧は220Vが主であり、プラグはA型とC型が主流で、まれにSE型があります。 </p>
-          <p>
+          <p class="card-text">
             日本の100V用電化製品を使用するには変圧器が必要で、日本のほぼ全ての電化製品について、それらをベトナムで使うにはプラグ変換アダプターが必要になります。<br>
             どちらも家電量販店や空港内のショップで購入できます。中級以上のホテルであれば貸出や備えつけのところもありますが、
             安宿を利用する場合は日本から持参したほうがよいでしょう。
@@ -150,7 +164,7 @@
             </figcaption>
           </div>
 
-          <p class="mt-5">
+          <p class="card-text">
             ただし、パソコンなどACアダプターが別になっているもので、ACアダプターに「100-240V」と記載されているものなら、
             ベトナムでもそのまま使用できます。<br>
             例えばAppleのPC MacBook用の充電器はこんな感じです。<br>
@@ -166,11 +180,11 @@
 
 
           <h2 class="mt-5">持ち込み・持ち出しが禁じられているもの</h2>
-          <p>麻薬や暴力的またはポルノなどの内容を含む書籍、ビデオ、DVDなどは、ベトナム国内への持ち込みが禁じられています。
+          <p class="card-text">麻薬や暴力的またはポルノなどの内容を含む書籍、ビデオ、DVDなどは、ベトナム国内への持ち込みが禁じられています。
             「週刊～」などの袋とじ雑誌も見つかれば軽くても数万円の罰金は免れません。<br>
             また、持ち出し禁止品としては、古代の美術品や遺跡・史跡などがあげられます。<br>
           </p>
-          <p>
+          <p class="card-text">
             いずれも発見された場合には、逮捕・拘束・高額な罰金を科せられる可能性が高く、場合によっては国外追放も免れません。
 
           </p>
@@ -178,7 +192,7 @@
 
           <h2 class="mt-5">ベトナムならではのお役立ちアイテム</h2>
           <h3>袈裟がけバッグ、小さなリュックサック</h3>
-          <p>特に都市部の混雑した道路上では、バイクによるひったくりが頻発しています。<br>
+          <p class="card-text">特に都市部の混雑した道路上では、バイクによるひったくりが頻発しています。<br>
             「あれは無理だな・・」と思わせるような街歩き用のカバンが必須です。
           </p>
 
@@ -194,18 +208,18 @@
           </div>
 
           <h3 class="mt-5">ぼうし</h3>
-          <p>ベトナムの日差しは日本に比べてかなり強烈。<br>
+          <p class="card-text">ベトナムの日差しは日本に比べてかなり強烈。<br>
             熱中症を防ぐためにも、ぼうしは心強いアイテムです。
             現地で安く手に入れることもできます。</p>
 
           <h3 class="mt-5">サングラス、マスク</h3>
-          <p>街を歩いていると、大量のバイクの排気ガスにのどや目をやられます。<br>
+          <p class="card-text">街を歩いていると、大量のバイクの排気ガスにのどや目をやられます。<br>
             現地で安く手に入れることもできます。</p>
 
 
 
           <h3 class="mt-5">薬用のど飴</h3>
-          <p>排気ガスでのどを痛めたとき、日本の薬用のど飴が重宝します。</p>
+          <p class="card-text">排気ガスでのどを痛めたとき、日本の薬用のど飴が重宝します。</p>
           <div class="card m-2 p-2" style="text-align:center">
             <h6><span class="badge badge-info m-2">AD</span></h6>
             <a href="https://hb.afl.rakuten.co.jp/ichiba/1bb1773c.56234bdd.1bb1773d.ff5e8133/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjintan%2F10010090%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjMwMHgzMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImxlZnQiLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjAsImJidG4iOjEsInByb2QiOjB9"
@@ -215,7 +229,7 @@
           </div>
 
           <h3 class="mt-5">果物ナイフ</h3>
-          <p>南国の果物を自分で買って食べてみたい方は持参しましょう。
+          <p class="card-text">南国の果物を自分で買って食べてみたい方は持参しましょう。
             機内には持ち込めないので、スーツケースに入れましょう。</p>
 
           <div class="card m-2 p-2" style="text-align:center">
@@ -225,7 +239,7 @@
                 src="https://hbb.afl.rakuten.co.jp/hgb/1bb17965.66e27775.1bb17966.8646030f/?me_id=1331116&item_id=10000928&m=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_gold%2Fi-top-shop%2F1.4703_1.jpg%3F_ex%3D80x80&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_gold%2Fi-top-shop%2F1.4703_1.jpg%3F_ex%3D300x300&s=300x300&t=pict"
                 class="w-75" border="0" style="margin:2px" alt="" title=""></a>
           </div>
-          <p class="mt-4">
+          <p class="mt-4 card-text">
             機内持ち込みの有無は航空会社のホームページよりご確認くださいね。<br>
             <a href="https://www.centrair.jp/flight/security/baggage-list.html">機内へ持ち込める物と持ち込めない物の代表例 - セントレア</a>
           </p>
@@ -237,9 +251,7 @@
           </div>
 
         </div>
-        <div class="card-footer text-muted">
-          投稿：2020/05/17
-        </div>
+
       </div>
 
       <div class="card m-2 p-2" style="text-align:center">
@@ -265,5 +277,5 @@
     </script>
   </footer>
 </body>
-
+<script src="./../../../js/behaviour.js"></script>
 </html>

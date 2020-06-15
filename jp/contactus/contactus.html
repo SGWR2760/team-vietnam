@@ -30,24 +30,34 @@
   <script>
     const ln = "jp";
     const depth = 2;
-    document.title = groupName.jp + ' | ' + document.title ;
-
+    document.title = groupName.jp + ' | ' + document.title;
   </script>
 
   <style>
+  h1{
+    text-align: center;
+  }
     h2 {
       padding: 48px 0px 12px 0px;
       /* text-align: center; */
     }
+
     a {
       text-decoration: none;
+    }
+
+    .mainContent{
+      text-align: center;
     }
   </style>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77378955-3"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-77378955-3');
@@ -68,16 +78,35 @@
     </script>
 
     <div class="mainContent">
-      <div class="card m-1">
-        <!-- <img src="./../../images/contactus/header.jpg" class="card-img-top" alt="..."> -->
+      <div class="card m-1 border-0">
+
+
+
         <div class="card-body">
-          <h1 class="card-title">お問い合わせ</h1>
+          <h1 class="card-title">Contact us</h1>
           <p class="card-text">
             以下のフォームよりご記入ください。</p>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf2GuANIIEi-8WGo8l77x-oZV2NtLuXwOtPtctLtgZ_tb-tzA/viewform?embedded=true" height="1100" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
 
+
+          <form name="contact-jp" method="POST" netlify>
+            <p>
+              <label>お名前: <input type="text" name="name" /></label>
+            </p>
+            <p>
+              <label>メールアドレス:
+                <input type="email" name="email" /></label>
+            </p>
+
+            <p>
+              <label>メッセージ: <textarea name="message"></textarea></label>
+            </p>
+            <p>
+              <button class="btn btn-primary rounded-0 border-0" style="background-color:#424874;" type="submit">Send</button>
+            </p>
+          </form>
         </div>
       </div>
+
     </div>
     <div class="otherContent">
       <script>
@@ -92,5 +121,5 @@
     </script>
   </footer>
 </body>
-
+<script src="./../../js/behaviour.js"></script>
 </html>

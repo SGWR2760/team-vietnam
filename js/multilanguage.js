@@ -46,25 +46,46 @@ function insertHeader2(type, depth) {
 function insertFooter(type, depth) {
   var completePath = buildPath(depth);
   var html = "";
-  html += '  <div class="jumbotron">';
-  html += '    <ul class="list-group">';
-  // 　日本語のページを表示
-  html += '      <li class="list-group-item"><script>ins(pageShowJp.' + type + ')</script></li>';
-  //  英語のページを表示
-  html += '      <li class="list-group-item"><script>ins(pageShowEn.' + type + ')</script></li>';
-  //  ベトナム語のページを表示
-  html += '      <li class="list-group-item"><script>ins(pageShowVn.' + type + ')</script></li>';
+  html += '<div class="footerContent">';
+  html += '  <div class="footerPageMenu mb-4">';
+  html += '    <ul>';
+  html += '      <li><script>ins(topPage.'+ type +')</script></li>';
+  html += '      <li><script>ins(aboutus.'+ type +')</script></li>';
+  html += '      <li><script>ins(allEventsInfo.'+ type +')</script></li>';
+  html += '      <li><script>ins(allUsefulInfo.'+ type +')</script></li>';
+  html += '      <li><script>ins(donate.'+ type +')</script></li>';
+  html += '      <li><script>ins(contactus.'+ type +')</script></li>';
   html += '    </ul>';
-  html += '    <ul class="list-group">';
-  html += '      <li class="list-group-item aboutus"><script>ins(aboutus.' + type + ');</script></li>';
-  html += '      <li class="list-group-item donate"><script>ins(donate.' + type + ');</script></li>';
-  html += '      <li class="list-group-item contactus"><script>ins(contactus.' + type + ');</script></li>';
-  html += '    </ul>';
-  html += '    <div class="copyright">';
-  html += '      <a href="#"><script>ins(disclaimer.' + type + ');</script></a>';
-  html += '      | copyright';
-  html += '    </div>';
   html += '  </div>';
+  html += '  <div class="footerLanguage mb-4">';
+  html += '    <ul>';
+  html += '      <li>';
+  html += '        <a href="./en">';
+  html += '          English page<br>';
+  html += '          <span class="otherLang">英語のページを表示</span>';
+  html += '        </a>';
+  html += '      </li>';
+  html += '      <li>';
+  html += '        <a href="./vn">';
+  html += '          Trang tiếng việt<br>';
+  html += '          <span class="otherLang mb-4">ベトナム語のページを表示</span>';
+  html += '        </a>';
+  html += '      </li>';
+  html += '';
+  html += '    </ul>';
+  html += '  </div>';
+  html += '  <div class="footerMenuOther footerPageMenu">';
+  html += '    <ul>';
+  html += '      <li><script>ins(disclaimer.'+ type +')</script></li>';
+  html += '      <li><script>ins(privacyPolicy.'+ type +')</script></li>';
+  html += '    </ul>';
+  html += '  </div>';
+  html += '</div>';
+  html += '<div class="footerCR">';
+  html += '<div class="cr">';
+  html += '©vietnam-nagoya.work';
+  html += '</div>';
+  html += '</div>';
   document.write(html);
 }
 
@@ -81,17 +102,17 @@ function headerAlert() {
 }
 
 function insertReccomentdation(type, depth) {
-  var completePath = buildPath(depth);
-  var html = "";
-  html += ' <div class="listContent">';
-  html += '   <ul class="list-group">';
-  html += '     <li class="list-group-item"><script>ins(allEventsInfo.' + type + ');</script></li>';
-  // html += '     <li class="list-group-item"><img src="./' + completePath + 'images/pastevents.svg"> <script>ins(allPastEvents.' + type + ');</script></li>';
-
-  html += '     <li class="list-group-item"><script>ins(allUsefulInfo.' + type + ');</script></li>';
-  html += '   </ul>';
-  html += ' </div>';
-  document.write(html);
+  // var completePath = buildPath(depth);
+  // var html = "";
+  // html += ' <div class="listContent">';
+  // html += '   <ul class="list-group">';
+  // html += '     <li class="list-group-item"><script>ins(allEventsInfo.' + type + ');</script></li>';
+  // // html += '     <li class="list-group-item"><img src="./' + completePath + 'images/pastevents.svg"> <script>ins(allPastEvents.' + type + ');</script></li>';
+  //
+  // html += '     <li class="list-group-item"><script>ins(allUsefulInfo.' + type + ');</script></li>';
+  // html += '   </ul>';
+  // html += ' </div>';
+  // document.write(html);
 }
 
 function buildPath(depth) {
@@ -103,9 +124,9 @@ function buildPath(depth) {
 }
 
 window.onload = function() {
-  const spinner = document.getElementById('loading');
-  spinner.classList.add('loaded');
-  // spinner.remove();
+  // const spinner = document.getElementById('loading');
+  // spinner.classList.add('loaded');
+  // // spinner.remove();
 }
 
 function insertLoading() {
@@ -124,41 +145,32 @@ function insertLoading() {
 
 function insertHeader(type, depth) {
   var html = "";
-  html += '<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">';
-  html += '<nav class="navbar navbar-expand-lg navbar-dark bg-primary">';
-  html += '  <a class="navbar-brand" href="#"><script>ins(groupName.jp)</script></a>';
-  html += '  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">';
-  html += '    <i class="fas fa-chevron-circle-down"></i>';
-  html += '  </button>';
-  html += '  <div class="collapse navbar-collapse" id="navbarSupportedContent">';
-  html += '    <ul class="navbar-nav mr-auto ml-2">';
-  html += '      <li class="nav-item active">';
-  html += '        <script>ins(topPage.' + type + ')</script>';
-  html += '      </li>';
-  html += '      <li class="nav-item active">';
-  html += '        <script>ins(allEventsInfo.' + type + ')</script>';
-  html += '      </li>';
-  html += '      <li class="nav-item active">';
-  html += '        <script>ins(allUsefulInfo.' + type + ')</script>';
-  html += '      </li>';
-  html += '      <li class="nav-item active">';
-  html += '        <script>ins(aboutus.' + type + ')</script>';
-  html += '      </li>';
-  if (type != "jp") {
-    html += '      <li class="nav-item active"><script>ins(pageShowJp.' + type + ');</script></li>';
-  }
-  if (type != "en") {
-    html += '      <li class="nav-item active"></img><script>ins(pageShowEn.' + type + ');</script></li>';
-  }
-  if (type != "vn") {
-    html += '      <li class="nav-item active"></img><script>ins(pageShowVn.' + type + ');</script></li>';
-  }
-  html += '      <li class="nav-item active">';
-  html += '        <script>ins(contactus.' + type + ')</script>';
-  html += '      </li>';
-  html += '    </ul>';
+  html += '<div id="navArea">';
+  html += '  <nav>';
+  html += '    <div class="inner">';
+  html += '      <ul>';
+  html += '        <li><script>ins(topPage.'+ type +')</script></li>';
+  html += '        <li><script>ins(aboutus.'+ type +')</script></li>';
+  html += '        <li><script>ins(allEventsInfo.'+ type +')</script></li>';
+  html += '        <li><script>ins(allUsefulInfo.'+ type +')</script></li>';
+  html += '        <li><script>ins(donate.'+ type +')</script></li>';
+  html += '        <li><script>ins(contactus.'+ type +')</script></li>';
+  html += '      </ul>';
+  html += '      <p class="mt-5">Global Menu</p>';
+  html += '      <ul>';
+  html += '        <li><a href="./en">英語のページを表示<br>English page</a></li>';
+  html += '        <li><a href="./vn">ベトナム語のページを表示<br>Trang tiếng việt</a></li>';
+  html += '      </ul>';
+  html += '    </div>';
+  html += '  </nav>';
+  html += '  <div class="toggle_btn">';
+  html += '    <span></span>';
+  html += '    <span></span>';
+  html += '    <span></span>';
   html += '  </div>';
-  html += '</nav>';
+  html += '  <div id="mask"></div>';
+  html += '';
+  html += '</div>';
   document.write(html);
 
 }
