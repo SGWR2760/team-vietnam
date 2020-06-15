@@ -124,9 +124,9 @@ function buildPath(depth) {
 }
 
 window.onload = function() {
-  const spinner = document.getElementById('loading');
-  spinner.classList.add('loaded');
-  // spinner.remove();
+  // const spinner = document.getElementById('loading');
+  // spinner.classList.add('loaded');
+  // // spinner.remove();
 }
 
 function insertLoading() {

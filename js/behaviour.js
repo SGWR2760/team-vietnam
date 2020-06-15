@@ -22,7 +22,7 @@ jQuery(function() {
   var pagetop = $('#page_top');
   $(window).scroll(function() {
     if ($(this).scrollTop() > 500) { //100pxスクロールしたら
-      console.log("発火");
+      // console.log("発火");
       if (appear == false) {
         appear = true;
         pagetop.stop().animate({
