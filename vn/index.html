@@ -32,34 +32,6 @@
     const ln = "vn"
     const depth = 1;
     document.title = groupName.jp + ' | ' + document.title;
-
-    jQuery(function() {
-      var appear = false;
-      var pagetop = $('#page_top');
-      $(window).scroll(function() {
-        if ($(this).scrollTop() > 500) { //100pxスクロールしたら
-          if (appear == false) {
-            appear = true;
-            pagetop.stop().animate({
-              'right': '16px' //右から0pxの位置に
-            }, 300); //0.3秒かけて現れる
-          }
-        } else {
-          if (appear) {
-            appear = false;
-            pagetop.stop().animate({
-              'right': '-50px' //右から-50pxの位置に
-            }, 300); //0.3秒かけて隠れる
-          }
-        }
-      });
-      pagetop.click(function() {
-        $('body, html').animate({
-          scrollTop: 0
-        }, 500); //0.5秒かけてトップへ戻る
-        return false;
-      });
-    });
   </script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77378955-3"></script>
@@ -78,6 +50,10 @@
 
 <body>
   <header>
+    <script>
+      insertHeader(ln, 1)
+    </script>
+
     <section class="headerSection">
       <div class="header-bg">
         <div class="headerImage">
@@ -97,33 +73,18 @@
 
   </header>
   <main>
-    <section class="menu">
-      <div class="menuBg">
-        <script type="text/javascript">
-          insertEnglishFooter();
-        </script>
-      </div>
 
-
-    </section>
-
-    <section class="noticeSection mt-5 leftAnime">
+    <section class="noticeSection leftAnime">
       <div class="sectionTitle">
         <h2>để ý</h2>
       </div>
       <div class="noticeTable">
-        <table class="table table-borderless">
-          <tbody>
-            <tr>
-              <td>25th May</td>
-              <td>chúng tôi áp dụng thiết kế mới</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="noticeDate mt-4">25th May</div>
+        <div class="noticeDisp">chúng tôi áp dụng thiết kế mới</div>
       </div>
     </section>
 
-    <section class="poem rightAnime">
+    <!-- <section class="poem rightAnime">
       <div class="poemArea">
         <h2 class="poemTitle">Why were you born in this world?</h2>
         <div class="poemBorder">
@@ -134,9 +95,7 @@
           You're still happy? - No, we aren't!!
         </p>
       </div>
-    </section>
-
-
+    </section> -->
 
     <section class="ourConceptSection leftAnime">
       <div class="sectionTitle">
@@ -152,7 +111,7 @@
               <img src="./../images/aboutus/index-image1.jpg" class="img-fluid rounded mt-5" alt="...">
             </div>
             <div class="ourConceptText mt-2">
-              We hold projects to understand each other's culture.
+              Xây dựng kế hoạch giúp hai nước Nhật và Việt có thể lý giải được văn hóa của nhau.
             </div>
           </div>
 
@@ -163,7 +122,7 @@
               <img src="./../images/aboutus/index-image2.jpg" class="img-fluid rounded mt-5" alt="...">
             </div>
             <div class="ourConceptText mt-2">
-              We would like to encourage active communication among those who come to the venue on the day.
+              Hãy tích cực trò chuyện với những vị khách khác tới tham dự sự kiện nha!
             </div>
           </div>
           <div class="col-sm-4 mt-5 mt-sm-2 bottomAnime">
@@ -173,7 +132,7 @@
               <img src="./../images/aboutus/index-image3.jpg" class="img-fluid rounded mt-5" alt="...">
             </div>
             <div class="ourConceptText mt-2">
-              Please take pictures and make each event memorable.
+              Hãy cùng nhau chụp thật nhiều ảnh để lưu giữ những kỷ niệm về event này nhé!
             </div>
           </div>
 
@@ -205,8 +164,10 @@
     </script>
   </footer>
 
-  <div id="page_top"><a class="btn" href="#"></a>
-    <!-- <a class="btn btn-primary" href="#" role="button">Link</a> -->
+  <!-- <div id="page_top"><a class="btn" href="#"></a> -->
+  <!-- <a class="btn btn-primary" href="#" role="button">Link</a> -->
+  <div id="page_top"><a class="btn" href="#"></a></div>
+
 
 
 </body>
@@ -260,5 +221,6 @@
 
   // sr.reveal('.sectionTitle', origin: 'right', distance: '50px', scale: 0.5);
 </script>
+<script src="./../js/behaviour.js"></script>
 
 </html>
