@@ -258,17 +258,35 @@ nav .inner ul li a:hover {
 }
 
 
-/* poem section */
-.poem {
-  /* margin: 10rem; */
+/* noticeSection */
+.noticeSection {
+  padding-bottom: 1rem;
+  margin: 10%;
+  background-color: var(--sub-bg-color);
 }
 
-.poemBorder {
+.noticeTable {
+  text-align: left;
+  margin: 2rem;
+}
+.noticeDate{
+  font-size: 0.8rem;
+  color: gray;
+}
+
+
+
+/* poem section */
+/* .poem { */
+  /* margin: 10rem; */
+/* } */
+
+/* .poemBorder {
   border-bottom: solid;
   margin: 0.5rem 45%;
-  border-color: var(--main-accent-color);;
+  border-color: var(--main-accent-color);; */
   /* border-radius: 0.5em; */
-}
+/* }
 
 .poemTitle {
   margin-top: 8rem;
@@ -284,7 +302,7 @@ nav .inner ul li a:hover {
   text-align: center;
   line-height: 3rem;
   margin-bottom: 8rem;
-}
+} */
 
 /* out concept section */
 .ourConceptSection {

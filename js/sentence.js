@@ -3,7 +3,7 @@ const url = "https://vietnam-nagoya.work"
 const groupName = {
   jp: 'ベトナム交流会',
   vn: 'Đảng trao đổi việt nam',
-  en: 'Meet and greet Vietnam in Naoya'
+  en: 'Meet and greet Vietnam in Nagoya'
 }
 
 const informationTitle = {
@@ -24,8 +24,8 @@ const usefulInfo = {
 }
 const aboutus = {
   jp: '<a href="' + url + '/jp/aboutus/aboutus.html">チーム概要</a>',
-  vn: 'vn???????',
-  en: '<a href="' + url + '/en/aboutus/aboutus.html"> About us</a>'
+  vn: '<a href="' + url + '/vn/aboutus/aboutus.html">Thông tin Nhóm</a>',
+  en: '<a href="' + url + '/en/aboutus/aboutus.html">About us</a>'
 }
 const donate = {
   jp: '<a href="' + url + '/jp/donate/donate.html"> 寄付</a>',
@@ -34,7 +34,7 @@ const donate = {
 }
 const contactus = {
   jp: '<a href="' + url + '/jp/contactus/contactus.html" role="button"> お問い合わせ</a>',
-  vn: 'vn????????',
+  vn: '<a href="' + url + '/vn/contactus/contactus.html" role="button"> Liên hệ & Giải đáp thắc mắc</a>',
   en: '<a href="' + url + '/en/contactus/contactus.html" role="button"> Contact us</a>'
 }
 const disclaimer = {
@@ -45,7 +45,7 @@ const disclaimer = {
 const privacyPolicy = {
   jp: '<a class="headerLink" href="' + url + '/jp/disclaimer/privacypolicy.html">プライバシーポリシー</a>',
   vn: 'vn????????',
-  en: 'disclaimer'
+  en: 'privacy policy'
 }
 
 const allEventsInfo = {
@@ -70,7 +70,7 @@ const allPastEvents = {
 
 const pageShowJp = {
   jp:'<a href="'+ url +'/index.html"> 日本語のページを表示</a>',
-  vn:'vn??????',
+  vn:'<a href="'+ url +'/index.html"> Hiển thị page Tiếng Nhật</a>',
   en:'<a href="'+ url +'/index.html"> Japanese Page</a>'
 }
 
