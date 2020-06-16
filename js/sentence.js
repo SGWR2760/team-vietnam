@@ -75,14 +75,14 @@ const pageShowJp = {
 }
 
 const pageShowEn = {
-  jp:'<a href="'+ url +'/en/index.html">English Page</a>',
-  vn:'<a href="'+ url +'/en/index.html">English Page</a>',
+  jp:'<a href="'+ url +'/en/index.html">英語のページを表示</a>',
+  vn:'<a href="'+ url +'/en/index.html">Hiển thị trang tiếng anh</a>',
   en:'<a href="'+ url +'/en/index.html">English Page</a>'
 }
 
 const pageShowVn = {
   jp:'<a href="'+ url +'/vn/index.html"> ベトナム語のページを表示</a>',
-  vn:'<a href="'+ url +'/vn/index.html"> ベトナム語のページを表示</a>',
+  vn:'<a href="'+ url +'/vn/index.html"> Hiển thị trang tiếng việt</a>',
   en:'<a href="'+ url +'/vn/index.html"> Vietnamese Page</a>'
 }
 

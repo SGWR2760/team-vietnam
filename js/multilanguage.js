@@ -49,12 +49,12 @@ function insertFooter(type, depth) {
   html += '<div class="footerContent">';
   html += '  <div class="footerPageMenu mb-4">';
   html += '    <ul>';
-  html += '      <li><script>ins(topPage.'+ type +')</script></li>';
-  html += '      <li><script>ins(aboutus.'+ type +')</script></li>';
-  html += '      <li><script>ins(allEventsInfo.'+ type +')</script></li>';
-  html += '      <li><script>ins(allUsefulInfo.'+ type +')</script></li>';
-  html += '      <li><script>ins(donate.'+ type +')</script></li>';
-  html += '      <li><script>ins(contactus.'+ type +')</script></li>';
+  html += '      <li><script>ins(topPage.' + type + ')</script></li>';
+  html += '      <li><script>ins(aboutus.' + type + ')</script></li>';
+  html += '      <li><script>ins(allEventsInfo.' + type + ')</script></li>';
+  html += '      <li><script>ins(allUsefulInfo.' + type + ')</script></li>';
+  html += '      <li><script>ins(donate.' + type + ')</script></li>';
+  html += '      <li><script>ins(contactus.' + type + ')</script></li>';
   html += '    </ul>';
   html += '  </div>';
   html += '  <div class="footerLanguage mb-4">';
@@ -76,8 +76,8 @@ function insertFooter(type, depth) {
   html += '  </div>';
   html += '  <div class="footerMenuOther footerPageMenu">';
   html += '    <ul>';
-  html += '      <li><script>ins(disclaimer.'+ type +')</script></li>';
-  html += '      <li><script>ins(privacyPolicy.'+ type +')</script></li>';
+  html += '      <li><script>ins(disclaimer.' + type + ')</script></li>';
+  html += '      <li><script>ins(privacyPolicy.' + type + ')</script></li>';
   html += '    </ul>';
   html += '  </div>';
   html += '</div>';
@@ -149,17 +149,28 @@ function insertHeader(type, depth) {
   html += '  <nav>';
   html += '    <div class="inner">';
   html += '      <ul>';
-  html += '        <li><script>ins(topPage.'+ type +')</script></li>';
-  html += '        <li><script>ins(aboutus.'+ type +')</script></li>';
-  html += '        <li><script>ins(allEventsInfo.'+ type +')</script></li>';
-  html += '        <li><script>ins(allUsefulInfo.'+ type +')</script></li>';
-  html += '        <li><script>ins(donate.'+ type +')</script></li>';
-  html += '        <li><script>ins(contactus.'+ type +')</script></li>';
+  html += '        <li><script>ins(topPage.' + type + ')</script></li>';
+  html += '        <li><script>ins(aboutus.' + type + ')</script></li>';
+  html += '        <li><script>ins(allEventsInfo.' + type + ')</script></li>';
+  html += '        <li><script>ins(allUsefulInfo.' + type + ')</script></li>';
+  html += '        <li><script>ins(donate.' + type + ')</script></li>';
+  html += '        <li><script>ins(contactus.' + type + ')</script></li>';
   html += '      </ul>';
   html += '      <p class="mt-5">Global Menu</p>';
   html += '      <ul>';
-  html += '        <li><a href="https://vietnam-nagoya.work/en/">英語のページを表示<br>English page</a></li>';
-  html += '        <li><a href="https://vietnam-nagoya.work/vn/">ベトナム語のページを表示<br>Trang tiếng việt</a></li>';
+  if (type == "jp") {
+  html += '        <li><script>ins(pageShowEn.en)</script></li>';
+    html += '        <li><script>ins(pageShowVn.vn)</script></li>';
+  }
+  if (type == "vn") {
+    html += '        <li><script>ins(pageShowJp.jp)</script></li>';
+    html += '        <li><script>ins(pageShowEn.en)</script></li>';
+
+  }
+  if (type == "en") {
+    html += '        <li><script>ins(pageShowJp.jp)</script></li>';
+    html += '        <li><script>ins(pageShowVn.vn)</script></li>';
+  }
   html += '      </ul>';
   html += '    </div>';
   html += '  </nav>';
