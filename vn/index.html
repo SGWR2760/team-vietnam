@@ -32,34 +32,6 @@
     const ln = "vn"
     const depth = 1;
     document.title = groupName.jp + ' | ' + document.title;
-
-    jQuery(function() {
-      var appear = false;
-      var pagetop = $('#page_top');
-      $(window).scroll(function() {
-        if ($(this).scrollTop() > 500) { //100pxスクロールしたら
-          if (appear == false) {
-            appear = true;
-            pagetop.stop().animate({
-              'right': '16px' //右から0pxの位置に
-            }, 300); //0.3秒かけて現れる
-          }
-        } else {
-          if (appear) {
-            appear = false;
-            pagetop.stop().animate({
-              'right': '-50px' //右から-50pxの位置に
-            }, 300); //0.3秒かけて隠れる
-          }
-        }
-      });
-      pagetop.click(function() {
-        $('body, html').animate({
-          scrollTop: 0
-        }, 500); //0.5秒かけてトップへ戻る
-        return false;
-      });
-    });
   </script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77378955-3"></script>
@@ -78,6 +50,10 @@
 
 <body>
   <header>
+    <script>
+      insertHeader(ln, 1)
+    </script>
+
     <section class="headerSection">
       <div class="header-bg">
         <div class="headerImage">
@@ -97,15 +73,15 @@
 
   </header>
   <main>
-    <section class="menu">
-      <div class="menuBg">
+    <!-- <section class="menu"> -->
+    <!-- <div class="menuBg">
         <script type="text/javascript">
           insertEnglishFooter();
         </script>
-      </div>
+      </div> -->
 
 
-    </section>
+    <!-- </section> -->
 
     <section class="noticeSection mt-5 leftAnime">
       <div class="sectionTitle">
@@ -205,8 +181,10 @@
     </script>
   </footer>
 
-  <div id="page_top"><a class="btn" href="#"></a>
-    <!-- <a class="btn btn-primary" href="#" role="button">Link</a> -->
+  <!-- <div id="page_top"><a class="btn" href="#"></a> -->
+  <!-- <a class="btn btn-primary" href="#" role="button">Link</a> -->
+  <div id="page_top"><a class="btn" href="#"></a></div>
+
 
 
 </body>
@@ -260,5 +238,6 @@
 
   // sr.reveal('.sectionTitle', origin: 'right', distance: '50px', scale: 0.5);
 </script>
+<script src="./../js/behaviour.js"></script>
 
 </html>
