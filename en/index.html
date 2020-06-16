@@ -25,7 +25,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 
-  <link rel="stylesheet" href="./style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="./../style.css">
   <script src="./../js/sentence.js"></script>
   <script src="./../js/multilanguage.js"></script>
 
@@ -51,49 +53,40 @@
 
 <body>
   <header>
+
+    <script>
+      insertHeader(ln, 0)
+    </script>
+
     <section class="headerSection">
       <div class="header-bg">
         <div class="headerImage">
-          <h1>Meet and greet Vietnam in Nagoya</h1>
         </div>
       </div>
+      <div class="arrawIcon">
+        <p>Scroll Down</p>
+        <i class="fas fa-angle-double-down faa-vertical animated"></i>
+      </div>
+      <div class="headerMessage rounded shadow">
+        <h1>
+          Xin chào tất cả mọi người</h1>
+        <p>The Vietnam Exchange Meeting is held for Vietnamese people coming to Japan to make connections and memories with Japanese people.
+        </p>
+      </div>
+
     </section>
-    <div class="arrawIcon">
-      <p>scroll down</p>
-      <i class="fas fa-angle-double-down faa-vertical animated"></i>
-    </div>
   </header>
   <main>
-
-    <section class="noticeSection mt-5 leftAnime">
+    <section class="noticeSection leftAnime">
       <div class="sectionTitle">
         <h2>Notice</h2>
       </div>
-      <div class="noticeTable m-5">
-        <table class="table table-borderless">
-          <tbody>
-            <tr>
-              <td>25th May</td>
-              <td>We applied a new page design.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <div class="noticeTable">
+        <div class="noticeDate">25th May</div>
+        <div class="noticeDisp">We applied a new page design.</div>
 
-    </section>
-
-    <section class="poem rightAnime">
-      <div class="poemArea">
-        <h2 class="poemTitle">Why were you born in this world?</h2>
-        <p class="poemText">
-          How are you going to live your life?<br>
-          If you have no answers until the end,<br>
-          You're still happy? - No, we aren't!!
-        </p>
       </div>
     </section>
-
-
 
     <section class="ourConceptSection leftAnime">
       <div class="sectionTitle">
@@ -156,12 +149,14 @@
       </div>
     </section>
   </main>
+
   <footer class="">
     <script type="text/javascript">
-      insertEnglishFooter();
+      insertFooter(ln,1);
     </script>
   </footer>
 
+<div id="page_top"><a class="btn" href="#"></a></div>
 
 </body>
 <script type="text/javascript">
@@ -214,5 +209,6 @@ sr.reveal('.bottomAnime', ScrollrevealFadeBottom, 100);
 
   // sr.reveal('.sectionTitle', origin: 'right', distance: '50px', scale: 0.5);
 </script>
+<script src="./../js/behaviour.js"></script>
 
 </html>
