@@ -50,7 +50,7 @@ const privacyPolicy = {
 
 const allEventsInfo = {
   jp: '<a href="' + url + '/jp/events/"> イベント情報一覧</a>',
-  vn: 'In preparation...',
+  vn: '<a href="' + url + '/vn/events/"> Danh sách thông tin sự kiện</a>',
   en: '<a href="' + url + '/en/events/"> All event info</a>'
 }
 
