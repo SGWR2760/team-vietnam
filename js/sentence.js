@@ -29,7 +29,7 @@ const aboutus = {
 }
 const donate = {
   jp: '<a href="' + url + '/jp/donate/donate.html"> 寄付</a>',
-  vn: 'In preparation...',
+  vn: '<a href="' + url + '/vn/donate/donate.html"> Quyên góp</a>',
   en: '<a href="' + url + '/en/donate/donate.html"> Donate</a>'
 }
 const contactus = {
