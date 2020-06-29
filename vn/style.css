@@ -534,3 +534,47 @@ nav .inner ul li a:hover {
   margin: auto;
   text-align: center;
 }
+
+/* blog information section */
+.blog {
+  color: #212529;
+  outline: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--sub-accent-color);
+}
+
+.blog:active {
+  text-decoration: none;
+  color: var(--main-accent-color);
+}
+
+.blogType {
+  background-color: var(--main-accent-color);
+  color: white;
+  height: 3rem;
+  width: 3rem;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  display: -webkit-flex;
+  align-items: center;
+  border-radius: 0.2rem 0px 0px 0px / 0.2rem 0px 0px 0px;
+  position: absolute;
+  top: 3rem;
+}
+
+.blogPostDate {
+  font-size: 1rem;
+}
+
+.blogPostTitle {
+  font-size: 1.25rem;
+}
+
+.learnMoreBtn {
+  text-align: center;
+  margin-top: 3rem;
+}
