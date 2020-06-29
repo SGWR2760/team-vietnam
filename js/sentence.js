@@ -57,7 +57,7 @@ const allEventsInfo = {
 
 const allUsefulInfo = {
   jp: '<a href="' + url + '/jp/information/"> お役立ち情報一覧</a>',
-  vn: 'In preparation...',
+  vn: '<a href="' + url + '/vn/information/"> Danh sách thông tin hữu ích</a>',
   en: '<a href="' + url + '/en/information/"> All topicks</a>'
 }
 
