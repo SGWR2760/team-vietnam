@@ -29,7 +29,7 @@ const aboutus = {
 }
 const donate = {
   jp: '<a href="' + url + '/jp/donate/donate.html"> 寄付</a>',
-  vn: 'In preparation...',
+  vn: '<a href="' + url + '/vn/donate/donate.html"> Quyên góp</a>',
   en: '<a href="' + url + '/en/donate/donate.html"> Donate</a>'
 }
 const contactus = {
@@ -50,14 +50,14 @@ const privacyPolicy = {
 
 const allEventsInfo = {
   jp: '<a href="' + url + '/jp/events/"> イベント情報一覧</a>',
-  vn: 'In preparation...',
+  vn: '<a href="' + url + '/vn/events/"> Danh sách thông tin sự kiện</a>',
   en: '<a href="' + url + '/en/events/"> All event info</a>'
 }
 
 
 const allUsefulInfo = {
   jp: '<a href="' + url + '/jp/information/"> お役立ち情報一覧</a>',
-  vn: 'In preparation...',
+  vn: '<a href="' + url + '/vn/information/"> Danh sách thông tin hữu ích</a>',
   en: '<a href="' + url + '/en/information/"> All topicks</a>'
 }
 

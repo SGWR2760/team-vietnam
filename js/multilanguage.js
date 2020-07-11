@@ -59,18 +59,62 @@ function insertFooter(type, depth) {
   html += '  </div>';
   html += '  <div class="footerLanguage mb-4">';
   html += '    <ul>';
-  html += '      <li>';
-  html += '        <a href="https://vietnam-nagoya.work/en/">';
-  html += '          English page<br>';
-  html += '          <span class="otherLang">英語のページを表示</span>';
-  html += '        </a>';
-  html += '      </li>';
-  html += '      <li>';
-  html += '        <a href="https://vietnam-nagoya.work/vn/">';
-  html += '          Trang tiếng việt<br>';
-  html += '          <span class="otherLang mb-4">ベトナム語のページを表示</span>';
-  html += '        </a>';
-  html += '      </li>';
+
+  if (type == "jp") {
+    html += '      <li>';
+    html += '        <a href="https://vietnam-nagoya.work/en/">';
+    html += '          English page<br>';
+    html += '          <span class="otherLang">英語のページを表示</span>';
+    html += '        </a>';
+    html += '      </li>';
+
+    html += '      <li>';
+    html += '        <a href="https://vietnam-nagoya.work/vn/">';
+    html += '          Trang tiếng việt<br>';
+    html += '          <span class="otherLang mb-4">ベトナム語のページを表示</span>';
+    html += '        </a>';
+    html += '      </li>';
+  }
+
+  if (type == "vn") {
+
+    html += '      <li>';
+    html += '        <a href="https://vietnam-nagoya.work/">';
+    html += '          日本語のページを表示<br>';
+    html += '          <span class="otherLang mb-4">Japanese Page</span>';
+
+    html += '        </a>';
+    html += '      </li>';
+
+    html += '      <li>';
+    html += '        <a href="https://vietnam-nagoya.work/en/">';
+    html += '          English page<br>';
+    html += '          <span class="otherLang">英語のページを表示</span>';
+    html += '        </a>';
+    html += '      </li>';
+
+  }
+  if (type == "en") {
+
+    html += '      <li>';
+    html += '        <a href="https://vietnam-nagoya.work/">';
+    html += '          日本語のページを表示<br>';
+    html += '          <span class="otherLang mb-4">Japanese Page</span>';
+
+    html += '        </a>';
+    html += '      </li>';
+
+    html += '      <li>';
+    html += '        <a href="https://vietnam-nagoya.work/vn/">';
+    html += '          Trang tiếng việt<br>';
+    html += '          <span class="otherLang mb-4">ベトナム語のページを表示</span>';
+    html += '        </a>';
+    html += '      </li>';
+
+  }
+
+
+
   html += '';
   html += '    </ul>';
   html += '  </div>';
@@ -159,7 +203,7 @@ function insertHeader(type, depth) {
   html += '      <p class="mt-5">Global Menu</p>';
   html += '      <ul>';
   if (type == "jp") {
-  html += '        <li><script>ins(pageShowEn.en)</script></li>';
+    html += '        <li><script>ins(pageShowEn.en)</script></li>';
     html += '        <li><script>ins(pageShowVn.vn)</script></li>';
   }
   if (type == "vn") {
