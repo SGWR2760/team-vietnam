@@ -39,6 +39,21 @@ function insertHeader2(type, depth) {
   html += '    </ul>';
   html += '  </div>';
 
+  html += '<div class="mt-5">';
+  html += '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>';
+  html += '<ins class="adsbygoogle"';
+  html += '     style="display:block"';
+  html += '     data-ad-format="fluid"';
+  html += '     data-ad-layout-key="-6v+eh+15-3z+5j"';
+  html += '     data-ad-client="ca-pub-9384631143962824"';
+  html += '     data-ad-slot="3556454717"></ins>';
+  html += '<script>';
+  html += '     (adsbygoogle = window.adsbygoogle || []).push({});';
+  html += '</script>';
+  html += '  </div>';
+
+
+
   html += '</div>';
   document.write(html);
 }
