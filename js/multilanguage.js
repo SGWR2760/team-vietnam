@@ -162,7 +162,7 @@ function headerAlert() {
 
 function insertReccomentdation(type, depth) {
   // var completePath = buildPath(depth);
-  // var html = "";
+  var html = '';
   // html += ' <div class="listContent">';
   // html += '   <ul class="list-group">';
   // html += '     <li class="list-group-item"><script>ins(allEventsInfo.' + type + ');</script></li>';
@@ -171,7 +171,16 @@ function insertReccomentdation(type, depth) {
   // html += '     <li class="list-group-item"><script>ins(allUsefulInfo.' + type + ');</script></li>';
   // html += '   </ul>';
   // html += ' </div>';
-  // document.write(html);
+  html += '<div class="card m-1 p-2" style="text-align:center">';
+  html += '  <h6><span class="badge badge-info m-2">AD</span></h6>';
+  html += '  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>';
+  html += '  <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-6v+eh+15-3z+5j" data-ad-client="ca-pub-9384631143962824" data-ad-slot="3556454717"></ins>';
+  html += '  <script>';
+  html += '    (adsbygoogle = window.adsbygoogle || []).push({});';
+  html += '  </script>';
+  html += '</div>';
+
+  document.write(html);
 }
 
 function buildPath(depth) {
