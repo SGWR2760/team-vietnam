@@ -47,16 +47,26 @@
     }
 
     h1 {
+      padding: 24px 0px 12px 0px;
       text-align: center;
     }
 
     h2 {
-      padding: 48px 0px;
+      padding: 24px 0px 12px 0px;
+
       text-align: center;
     }
 
     a {
       text-decoration: none;
+    }
+
+    table {
+      table-layout: fixed;
+    }
+
+    .tableTitle {
+      width: 4em;
     }
 
     #discover {
@@ -115,46 +125,32 @@
     <div class="mainContent">
       <div class="card m-1">
         <div class="card-body">
-          <h1 class="card-title">チーム概要</h1>
+
           <img src="./../../images/aboutus/header.jpg" class="card-img-top" alt="...">
+          <h1 class="card-title">チーム概要</h1>
 
+          <p class="mt-3">
+            私達はベトナム人と日本人がお互いの　①文化を"発見"し、②つながりを"共有"し、③"記憶"に残すをモットーに様々な交流会を企画する団体です。
+          </p>
+          <p class="mt-3">
+            2018年に第1回の交流会を開催し、2021年で11回の交流会を開催しています。
+          </p>
+          <p class="mt-3">
+            名古屋を拠点とし、大学生（ベトナムからの留学生・日本人学生）、社会人、技能実習生が主軸となって交流会を企画しています。
 
+          </p>
+
+          <!--
           <h2 class="card-title">コンセプト</h2>
           <p class="card-text">私達は<span id="vietnam">ベトナム人</span>と<span id="japanese">日本人</span>がお互いの</p>
           <p class="card-text concept-contents">①文化を<span id="discover">"発見"</span>し、<br>
             ②つながりを<span id="share">"共有"</span>し、<br>
             ③<span id="memory">"記憶"</span>に残す</p>
-          <p class="card-text">イベントを開催することです。</p>
+          <p class="card-text">イベントを開催することです。</p> -->
 
-          <h2 class="card-title">団体概要</h2>
-          <table class="table">
-            <tbody>
-              <tr>
-                <td>名称</td>
-                <td>
-                  <script>
-                    ins(groupName.jp)
-                  </script>
-                </td>
-              </tr>
-              <tr>
-                <td>拠点</td>
-                <td>愛知県名古屋市</td>
-              </tr>
-              <tr>
-                <td>創業</td>
-                <td>2018年4月</td>
-              </tr>
-              <tr>
-                <td>設立</td>
-                <td>2018年10月</td>
-              </tr>
-              <tr>
-                <td>メンバー数</td>
-                <td>約10名</td>
-              </tr>
-            </tbody>
-          </table>
+
+
+
 
           <h2 class="card-title">活動歴</h2>
 
@@ -326,7 +322,7 @@
                 <div class="cd-timeline__content text-component">
                   <h2 class="timeline">第7回<br>イベント開催</h2>
                   <p class="color-contrast-medium">
-                      チーム対抗ゲーム、クイズなどの人気企画はもちろん、手巻き寿司を作って食べました！
+                    チーム対抗ゲーム、クイズなどの人気企画はもちろん、手巻き寿司を作って食べました！
                   </p>
                   <img src="./../../images/events/event007/header.jpg" class="rounded" alt="event image">
 
@@ -344,7 +340,7 @@
                 <div class="cd-timeline__content text-component">
                   <h2 class="timeline">第8回<br>イベント開催</h2>
                   <p class="color-contrast-medium">
-                      今回は🍙0円ピクニック🍙ポットラック型のパーティーを企画しましたが、、、
+                    今回は🍙0円ピクニック🍙ポットラック型のパーティーを企画しましたが、、、
                   </p>
                   <img src="./../../images/events/event008/header.jpg" class="rounded" alt="event image">
 
@@ -356,29 +352,13 @@
 
               <div class="cd-timeline__block">
                 <div class="cd-timeline__img cd-timeline__img--picture">
-                  <!-- <img src="assets/img/cd-icon-article.svg" alt="Article"> -->
-                  <h6><span class="badge badge-info m-2">AD</span></h6>
-                </div> <!-- cd-timeline__img -->
-                <div class="cd-timeline__content text-component">
-                  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                  <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-6v+eh+15-3z+5j" data-ad-client="ca-pub-9384631143962824" data-ad-slot="3556454717"></ins>
-                  <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                  </script>
-
-                </div> <!-- cd-timeline__content -->
-              </div> <!-- cd-timeline__block -->
-
-
-              <div class="cd-timeline__block">
-                <div class="cd-timeline__img cd-timeline__img--picture">
                   <img src="assets/img/cd-icon-article.svg" alt="Article">
                 </div> <!-- cd-timeline__img -->
 
                 <div class="cd-timeline__content text-component">
                   <h2 class="timeline">第9回<br>イベント開催</h2>
                   <p class="color-contrast-medium">
-                      今回こそピクニック！青空の下でみんなでピクニックを企画しましたが、、、
+                    今回こそピクニック！青空の下でみんなでピクニックを企画しましたが、、、
                   </p>
                   <img src="./../../images/events/event009/header.jpg" class="rounded" alt="event image">
 
@@ -392,23 +372,40 @@
             </div>
           </section>
 
+
+          <h2 class="card-title">団体概要</h2>
+          <table class="table">
+            <tbody>
+              <tr>
+                <td class="tableTitle">名称</td>
+                <td>
+                  <script>
+                    ins(groupName.jp)
+                  </script>
+                </td>
+              </tr>
+              <tr>
+                <td>拠点</td>
+                <td>愛知県名古屋市</td>
+              </tr>
+              <tr>
+                <td>設立</td>
+                <td>2018年10月</td>
+              </tr>
+              <tr>
+                <td>メンバー</td>
+                <td>愛知県内在住の大学生、社会人、技能実習生などを含む約10名で企画立案</td>
+              </tr>
+            </tbody>
+          </table>
+
         </div>
       </div>
-      <div class="card m-1 p-2" style="text-align:center">
-        <h6><span class="badge badge-info m-2">AD</span></h6>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-6v+eh+15-3z+5j" data-ad-client="ca-pub-9384631143962824" data-ad-slot="3556454717"></ins>
-        <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-      </div>
+
     </div>
     <script src="assets/js/main.js"></script>
 
     <div class="otherContent">
-      <script>
-        insertReccomentdation(ln, depth);
-      </script>
     </div>
     </div>
   </main>
